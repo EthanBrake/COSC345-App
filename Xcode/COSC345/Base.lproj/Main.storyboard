@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -178,6 +179,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BH3-Qu-lel">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Journal/Diary" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-L5-xD2">
                                 <rect key="frame" x="34" y="66" width="182" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -194,6 +198,12 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BH3-Qu-lel" firstAttribute="leading" secondItem="uUA-I6-dEM" secondAttribute="leading" id="EbS-te-zW5"/>
+                            <constraint firstItem="BH3-Qu-lel" firstAttribute="top" secondItem="uUA-I6-dEM" secondAttribute="topMargin" id="QZj-aV-T0k"/>
+                            <constraint firstAttribute="bottom" secondItem="BH3-Qu-lel" secondAttribute="bottom" id="VAR-mP-GId"/>
+                            <constraint firstAttribute="trailing" secondItem="BH3-Qu-lel" secondAttribute="trailing" id="sSz-nW-ibO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="alV-a8-mh6"/>
                     </view>
                 </viewController>
@@ -209,6 +219,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CND-Pm-mCs">
+                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Goals" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-7q-xnt">
                                 <rect key="frame" x="96" y="221" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -218,6 +231,12 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CND-Pm-mCs" firstAttribute="leading" secondItem="ClR-Zl-gwf" secondAttribute="leading" id="4P5-zV-h3t"/>
+                            <constraint firstItem="ClR-Zl-gwf" firstAttribute="trailing" secondItem="CND-Pm-mCs" secondAttribute="trailing" id="gpd-5n-3p8"/>
+                            <constraint firstItem="CND-Pm-mCs" firstAttribute="top" secondItem="ClR-Zl-gwf" secondAttribute="top" id="hUw-nd-05U"/>
+                            <constraint firstItem="CND-Pm-mCs" firstAttribute="bottom" secondItem="ClR-Zl-gwf" secondAttribute="bottom" id="r7c-Pt-sNL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ClR-Zl-gwf"/>
                     </view>
                 </viewController>
@@ -233,8 +252,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nif-ag-loi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Toolkit" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="By7-D7-NZm">
-                                <rect key="frame" x="93" y="240" width="97" height="30"/>
+                                <rect key="frame" x="93" y="-30" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -242,6 +264,12 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YVW-S3-KE8" firstAttribute="bottom" secondItem="nif-ag-loi" secondAttribute="bottom" id="0Ra-SO-Nxw"/>
+                            <constraint firstItem="YVW-S3-KE8" firstAttribute="trailing" secondItem="nif-ag-loi" secondAttribute="trailing" id="M6l-je-ZRQ"/>
+                            <constraint firstItem="nif-ag-loi" firstAttribute="leading" secondItem="YVW-S3-KE8" secondAttribute="leading" id="XOV-Xq-Trl"/>
+                            <constraint firstItem="nif-ag-loi" firstAttribute="top" secondItem="xOP-6Z-GDP" secondAttribute="top" id="eWS-IM-4Cs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YVW-S3-KE8"/>
                     </view>
                 </viewController>
@@ -257,8 +285,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="p5O-hQ-LQy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Information" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncG-Nv-ELT">
-                                <rect key="frame" x="114" y="192" width="106" height="30"/>
+                                <rect key="frame" x="114" y="-30" width="106" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -266,6 +297,12 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FP3-6R-Om9" firstAttribute="trailing" secondItem="p5O-hQ-LQy" secondAttribute="trailing" id="1vf-lI-kiy"/>
+                            <constraint firstItem="p5O-hQ-LQy" firstAttribute="top" secondItem="ldb-19-vJ5" secondAttribute="top" id="2BI-PF-aOD"/>
+                            <constraint firstItem="p5O-hQ-LQy" firstAttribute="leading" secondItem="FP3-6R-Om9" secondAttribute="leading" id="INm-N2-xOZ"/>
+                            <constraint firstItem="FP3-6R-Om9" firstAttribute="bottom" secondItem="p5O-hQ-LQy" secondAttribute="bottom" id="SjU-wh-8ks"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FP3-6R-Om9"/>
                     </view>
                 </viewController>
@@ -280,7 +317,18 @@
                     <view key="view" contentMode="scaleToFill" id="bA3-7K-3hW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-Uz-bOA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FyH-Bj-oy6" firstAttribute="bottom" secondItem="fY3-Uz-bOA" secondAttribute="bottom" id="ZqL-KM-htZ"/>
+                            <constraint firstItem="FyH-Bj-oy6" firstAttribute="trailing" secondItem="fY3-Uz-bOA" secondAttribute="trailing" id="dX8-SM-q7H"/>
+                            <constraint firstItem="fY3-Uz-bOA" firstAttribute="leading" secondItem="FyH-Bj-oy6" secondAttribute="leading" id="qxX-cQ-STG"/>
+                            <constraint firstItem="fY3-Uz-bOA" firstAttribute="top" secondItem="bA3-7K-3hW" secondAttribute="top" id="ysl-0f-LW8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FyH-Bj-oy6"/>
                     </view>
                 </viewController>
@@ -295,7 +343,18 @@
                     <view key="view" contentMode="scaleToFill" id="pVf-MZ-CCL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="E0Z-ZT-Asj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E0Z-ZT-Asj" secondAttribute="bottom" id="0HE-Z1-Bb8"/>
+                            <constraint firstItem="E0Z-ZT-Asj" firstAttribute="top" secondItem="pVf-MZ-CCL" secondAttribute="top" id="7oa-cm-qZf"/>
+                            <constraint firstItem="E0Z-ZT-Asj" firstAttribute="leading" secondItem="pVf-MZ-CCL" secondAttribute="leading" id="PAg-EI-zvc"/>
+                            <constraint firstAttribute="trailing" secondItem="E0Z-ZT-Asj" secondAttribute="trailing" id="fYf-u2-SOH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hT6-a6-RBa"/>
                     </view>
                 </viewController>
