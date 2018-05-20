@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4A396DF20B125E3000CDC9F /* WhatIsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */; };
+		B4A396E120B1260B000CDC9F /* LivingWithInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */; };
+		B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */; };
+		B4A396E520B12648000CDC9F /* ImprovingSkillsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E420B12648000CDC9F /* ImprovingSkillsInfoViewController.swift */; };
+		B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E620B12661000CDC9F /* MoreInfoViewController.swift */; };
 		C830BF892092C33B00FFEAA9 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830BF882092C33B00FFEAA9 /* HelpViewController.swift */; };
 		C88F2A9E206482110039194A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2A9D206482110039194A /* AppDelegate.swift */; };
 		C88F2AA0206482110039194A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2A9F206482110039194A /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsInfoViewController.swift; sourceTree = "<group>"; };
+		B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingWithInfoViewController.swift; sourceTree = "<group>"; };
+		B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesInfoViewController.swift; sourceTree = "<group>"; };
+		B4A396E420B12648000CDC9F /* ImprovingSkillsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprovingSkillsInfoViewController.swift; sourceTree = "<group>"; };
+		B4A396E620B12661000CDC9F /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		C830BF882092C33B00FFEAA9 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		C88F2A9A206482110039194A /* COSC345.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COSC345.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88F2A9D206482110039194A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +77,11 @@
 				C88F2A9D206482110039194A /* AppDelegate.swift */,
 				C88F2A9F206482110039194A /* ViewController.swift */,
 				C88F2AA1206482120039194A /* Main.storyboard */,
+				B4A396E620B12661000CDC9F /* MoreInfoViewController.swift */,
+				B4A396E420B12648000CDC9F /* ImprovingSkillsInfoViewController.swift */,
+				B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */,
+				B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */,
+				B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */,
 				C88F2AA4206482120039194A /* Assets.xcassets */,
 				C88F2AA6206482120039194A /* LaunchScreen.storyboard */,
 				C88F2AA9206482120039194A /* Info.plist */,
@@ -155,9 +170,14 @@
 				C8C6571E2069D03B007402CA /* ForthViewController.swift in Sources */,
 				C88F2ABA206491B40039194A /* FifthViewController.swift in Sources */,
 				C88F2AB22064826E0039194A /* SecondViewController.swift in Sources */,
+				B4A396E120B1260B000CDC9F /* LivingWithInfoViewController.swift in Sources */,
+				B4A396DF20B125E3000CDC9F /* WhatIsInfoViewController.swift in Sources */,
+				B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */,
 				C88F2AA0206482110039194A /* ViewController.swift in Sources */,
 				C88F2AB4206485E30039194A /* ThirdViewController.swift in Sources */,
+				B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */,
 				C88F2A9E206482110039194A /* AppDelegate.swift in Sources */,
+				B4A396E520B12648000CDC9F /* ImprovingSkillsInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
