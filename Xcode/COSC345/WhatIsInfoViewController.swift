@@ -26,7 +26,7 @@ class WhatIsInfoViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let url = URL(string: "https://www.google.com")!
+        let url = URL(string: "https://en.wikipedia.org/wiki/Social_anxiety_disorder")!
         let request = URLRequest(url: url)
         
         webview.load(request)

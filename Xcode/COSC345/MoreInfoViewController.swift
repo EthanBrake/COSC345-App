@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import WebKit
 
 class MoreInfoViewController: UIViewController {
-
+    @IBOutlet weak var webview: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,14 @@ class MoreInfoViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let url = URL(string: "https://www.verywellmind.com/social-anxiety-support-groups-3024876")!
+        let request = URLRequest(url: url)
+        
+        webview.load(request)
     }
     
 
