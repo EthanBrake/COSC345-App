@@ -2,8 +2,8 @@
 //  SecondViewController.swift
 //  COSC345
 //
-//  Created by Ethan Brake on 3/23/18.
-//  Copyright © 2018 Ethan Brake. All rights reserved.
+//  Created by Robert Giles on 3/23/18.
+//  Copyright © 2018 Robert Giles. All rights reserved.
 //
 
 import UIKit
