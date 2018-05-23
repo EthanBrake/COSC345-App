@@ -10,10 +10,11 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Third"
+        self.title = "My Goals"
         // Do any additional setup after loading the view.
     }
 
@@ -22,15 +23,41 @@ class ThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+   
+    @IBAction func writeAGoalVC(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let toWriteAGoal = storyboard.instantiateViewController(withIdentifier: "WriteAGoalViewController")as!WriteAGoalViewController
+        
+        self.navigationController?.pushViewController(toWriteAGoal, animated: true)
     }
-    */
-
+    
+    @IBAction func whatIsAGoalVC(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let toWhatisGoal = storyboard.instantiateViewController(withIdentifier: "WhatisAGoalViewController")as!WhatisAGoalViewController
+        
+        self.navigationController?.pushViewController(toWhatisGoal, animated: true )
+    }
+    
+    @IBAction func toReviewVC(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let toReviewGoal = storyboard.instantiateViewController(withIdentifier: "ReviewMyGoalsViewController")as!ReviewMyGoalsViewController
+        
+        self.navigationController?.pushViewController(toReviewGoal, animated: true)
+    }
+   
+    @IBAction func CurrentGoalsVC(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let toCurrentGoal = storyboard.instantiateViewController(withIdentifier: "CurrentGoalsViewController")as!CurrentGoalsViewController
+        
+        self.navigationController?.pushViewController(toCurrentGoal, animated: true)
+    }
+    
+    
 }
+
