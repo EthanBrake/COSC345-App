@@ -9,8 +9,10 @@
 import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     var list: [String] = []
+    
+    let listUserDefault = UserDefaults.standard
     
     @IBOutlet weak var myTableView: UITableView!
     
@@ -32,43 +34,48 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if editingStyle == UITableViewCellEditingStyle.delete
         {
             self.list.remove(at: indexPath.row)
+            listUserDefault.set(list, forKey: "best")
             myTableView.reloadData()
         }
     }
-
+    
     @IBOutlet weak var input: UITextField!
     
     @IBAction func additem(_ sender: Any) {
         if(input.text != "")
         {
             list.append(input.text!)
-            myTableView.reloadData()
             input.text = ""
+            listUserDefault.set(list, forKey: "best")
+            myTableView.reloadData()
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-         self.title = "Second"
+        
+        if let list = listUserDefault.stringArray(forKey: "best"){
+            self.list = list
+        }
+        
+        self.title = "Second"
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
