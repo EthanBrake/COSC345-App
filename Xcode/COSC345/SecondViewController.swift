@@ -23,9 +23,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell") as UITableViewCell
         cell.textLabel?.text = list[indexPath.row]
-        
+        cell.textLabel?.numberOfLines = 0
         return(cell)
     }
     
@@ -57,6 +57,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if let list = listUserDefault.stringArray(forKey: "best"){
             self.list = list
         }
+        
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        myTableView.rowHeight = UITableViewAutomaticDimension
+        
         
         self.title = "Second"
         // Do any additional setup after loading the view.
