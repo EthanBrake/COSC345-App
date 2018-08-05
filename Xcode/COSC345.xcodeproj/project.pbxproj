@@ -12,6 +12,13 @@
 		B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */; };
 		B4A396E520B12648000CDC9F /* ImprovingSkillsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E420B12648000CDC9F /* ImprovingSkillsInfoViewController.swift */; };
 		B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E620B12661000CDC9F /* MoreInfoViewController.swift */; };
+		C80DEFAF2117BAEA00E2604F /* TableViewCellGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */; };
+		C80DEFB02117BAEA00E2604F /* TableViewCellGoal.xib in Resources */ = {isa = PBXBuildFile; fileRef = C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */; };
+		C80DEFB22117BBA900E2604F /* GoalsCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */; };
+		C82D0920210FD4E000B5A4B3 /* UnChecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */; };
+		C82D0921210FD4E000B5A4B3 /* Checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091D210FD4DD00B5A4B3 /* Checked@2x.png */; };
+		C82D0922210FD4E000B5A4B3 /* UnChecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */; };
+		C82D0923210FD4E000B5A4B3 /* Checked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091F210FD4DF00B5A4B3 /* Checked@3x.png */; };
 		C830BF892092C33B00FFEAA9 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830BF882092C33B00FFEAA9 /* SettingsController.swift */; };
 		C88F2A9E206482110039194A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2A9D206482110039194A /* AppDelegate.swift */; };
 		C88F2AA0206482110039194A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2A9F206482110039194A /* ViewController.swift */; };
@@ -34,6 +41,13 @@
 		B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesInfoViewController.swift; sourceTree = "<group>"; };
 		B4A396E420B12648000CDC9F /* ImprovingSkillsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprovingSkillsInfoViewController.swift; sourceTree = "<group>"; };
 		B4A396E620B12661000CDC9F /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGoal.swift; sourceTree = "<group>"; };
+		C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellGoal.xib; sourceTree = "<group>"; };
+		C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsCellsViewController.swift; sourceTree = "<group>"; };
+		C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnChecked@2x.png"; sourceTree = "<group>"; };
+		C82D091D210FD4DD00B5A4B3 /* Checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked@2x.png"; sourceTree = "<group>"; };
+		C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnChecked@3x.png"; sourceTree = "<group>"; };
+		C82D091F210FD4DF00B5A4B3 /* Checked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked@3x.png"; sourceTree = "<group>"; };
 		C830BF882092C33B00FFEAA9 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		C88F2A9A206482110039194A /* COSC345.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COSC345.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88F2A9D206482110039194A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +96,10 @@
 		C88F2A9C206482110039194A /* COSC345 */ = {
 			isa = PBXGroup;
 			children = (
+				C82D091D210FD4DD00B5A4B3 /* Checked@2x.png */,
+				C82D091F210FD4DF00B5A4B3 /* Checked@3x.png */,
+				C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */,
+				C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */,
 				C88F2A9D206482110039194A /* AppDelegate.swift */,
 				C88F2A9F206482110039194A /* ViewController.swift */,
 				C88F2AA1206482120039194A /* Main.storyboard */,
@@ -102,6 +120,9 @@
 				C8D119C220B4AFAD0029739F /* WhatisAGoalViewController.swift */,
 				C8FDBF8F20B4B19A0037C795 /* ReviewMyGoalsViewController.swift */,
 				C8FDBF9320B4B93B0037C795 /* CurrentGoalsViewController.swift */,
+				C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */,
+				C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */,
+				C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */,
 			);
 			path = COSC345;
 			sourceTree = "<group>";
@@ -165,9 +186,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82D0922210FD4E000B5A4B3 /* UnChecked@3x.png in Resources */,
+				C82D0921210FD4E000B5A4B3 /* Checked@2x.png in Resources */,
 				C88F2AA8206482120039194A /* LaunchScreen.storyboard in Resources */,
+				C82D0923210FD4E000B5A4B3 /* Checked@3x.png in Resources */,
+				C80DEFB02117BAEA00E2604F /* TableViewCellGoal.xib in Resources */,
 				C88F2AA5206482120039194A /* Assets.xcassets in Resources */,
 				C88F2AA3206482120039194A /* Main.storyboard in Resources */,
+				C82D0920210FD4E000B5A4B3 /* UnChecked@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80DEFAF2117BAEA00E2604F /* TableViewCellGoal.swift in Sources */,
 				C830BF892092C33B00FFEAA9 /* SettingsController.swift in Sources */,
 				C8C6571E2069D03B007402CA /* ForthViewController.swift in Sources */,
 				C88F2ABA206491B40039194A /* FifthViewController.swift in Sources */,
@@ -192,6 +219,7 @@
 				C8D119C320B4AFAD0029739F /* WhatisAGoalViewController.swift in Sources */,
 				C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */,
 				B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */,
+				C80DEFB22117BBA900E2604F /* GoalsCellsViewController.swift in Sources */,
 				C88F2A9E206482110039194A /* AppDelegate.swift in Sources */,
 				B4A396E520B12648000CDC9F /* ImprovingSkillsInfoViewController.swift in Sources */,
 			);
