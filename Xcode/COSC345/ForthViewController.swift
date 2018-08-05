@@ -12,6 +12,7 @@ class ForthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Tool-Kit"
 
         // Do any additional setup after loading the view.
     }
