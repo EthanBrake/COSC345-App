@@ -67,6 +67,20 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         myIndex = indexPath.row
         performSegue(withIdentifier: "toViewGoalSegue", sender: self)
     }
+    
+    //this func deletes cell rows
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == UITableViewCellEditingStyle.delete{
+            listItemArray.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+    }
     /*
     // MARK: - Navigation
 
