@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B46CD9ED21183D6B002C21D8 /* pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CD9EC21183D6B002C21D8 /* pulsing.swift */; };
+		B46CD9EF21183DAB002C21D8 /* mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B46CD9EE21183DA9002C21D8 /* mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png */; };
+		B46CD9F121183ECF002C21D8 /* ToolkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CD9F021183ECF002C21D8 /* ToolkitViewController.swift */; };
 		B4A396DF20B125E3000CDC9F /* WhatIsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */; };
 		B4A396E120B1260B000CDC9F /* LivingWithInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */; };
 		B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */; };
@@ -28,7 +31,6 @@
 		C88F2AB22064826E0039194A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB12064826E0039194A /* SecondViewController.swift */; };
 		C88F2AB4206485E30039194A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB3206485E30039194A /* ThirdViewController.swift */; };
 		C88F2ABA206491B40039194A /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB9206491B40039194A /* FifthViewController.swift */; };
-		C8C6571E2069D03B007402CA /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6571D2069D03B007402CA /* ForthViewController.swift */; };
 		C8D119BF20B4A9370029739F /* WriteAGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D119BE20B4A9370029739F /* WriteAGoalViewController.swift */; };
 		C8D119C320B4AFAD0029739F /* WhatisAGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D119C220B4AFAD0029739F /* WhatisAGoalViewController.swift */; };
 		C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDBF8F20B4B19A0037C795 /* ReviewMyGoalsViewController.swift */; };
@@ -36,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B46CD9EC21183D6B002C21D8 /* pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pulsing.swift; sourceTree = "<group>"; };
+		B46CD9EE21183DA9002C21D8 /* mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png"; sourceTree = "<group>"; };
+		B46CD9F021183ECF002C21D8 /* ToolkitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolkitViewController.swift; sourceTree = "<group>"; };
 		B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsInfoViewController.swift; sourceTree = "<group>"; };
 		B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingWithInfoViewController.swift; sourceTree = "<group>"; };
 		B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesInfoViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +64,6 @@
 		C88F2AB12064826E0039194A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C88F2AB3206485E30039194A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C88F2AB9206491B40039194A /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
-		C8C6571D2069D03B007402CA /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		C8D119BE20B4A9370029739F /* WriteAGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteAGoalViewController.swift; sourceTree = "<group>"; };
 		C8D119C220B4AFAD0029739F /* WhatisAGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatisAGoalViewController.swift; sourceTree = "<group>"; };
 		C8FDBF8F20B4B19A0037C795 /* ReviewMyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMyGoalsViewController.swift; sourceTree = "<group>"; };
@@ -101,11 +105,14 @@
 				C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */,
 				C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */,
 				C88F2A9D206482110039194A /* AppDelegate.swift */,
+				B46CD9EE21183DA9002C21D8 /* mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png */,
 				C88F2A9F206482110039194A /* ViewController.swift */,
 				C88F2AA1206482120039194A /* Main.storyboard */,
 				B4A396E620B12661000CDC9F /* MoreInfoViewController.swift */,
+				B46CD9EC21183D6B002C21D8 /* pulsing.swift */,
 				B4A396E420B12648000CDC9F /* ImprovingSkillsInfoViewController.swift */,
 				B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */,
+				B46CD9F021183ECF002C21D8 /* ToolkitViewController.swift */,
 				B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */,
 				B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */,
 				C88F2AA4206482120039194A /* Assets.xcassets */,
@@ -114,7 +121,6 @@
 				C88F2AB12064826E0039194A /* SecondViewController.swift */,
 				C88F2AB3206485E30039194A /* ThirdViewController.swift */,
 				C88F2AB9206491B40039194A /* FifthViewController.swift */,
-				C8C6571D2069D03B007402CA /* ForthViewController.swift */,
 				C830BF882092C33B00FFEAA9 /* SettingsController.swift */,
 				C8D119BE20B4A9370029739F /* WriteAGoalViewController.swift */,
 				C8D119C220B4AFAD0029739F /* WhatisAGoalViewController.swift */,
@@ -187,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82D0922210FD4E000B5A4B3 /* UnChecked@3x.png in Resources */,
+				B46CD9EF21183DAB002C21D8 /* mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png in Resources */,
 				C82D0921210FD4E000B5A4B3 /* Checked@2x.png in Resources */,
 				C88F2AA8206482120039194A /* LaunchScreen.storyboard in Resources */,
 				C82D0923210FD4E000B5A4B3 /* Checked@3x.png in Resources */,
@@ -206,11 +213,11 @@
 			files = (
 				C80DEFAF2117BAEA00E2604F /* TableViewCellGoal.swift in Sources */,
 				C830BF892092C33B00FFEAA9 /* SettingsController.swift in Sources */,
-				C8C6571E2069D03B007402CA /* ForthViewController.swift in Sources */,
 				C88F2ABA206491B40039194A /* FifthViewController.swift in Sources */,
 				C88F2AB22064826E0039194A /* SecondViewController.swift in Sources */,
 				B4A396E120B1260B000CDC9F /* LivingWithInfoViewController.swift in Sources */,
 				B4A396DF20B125E3000CDC9F /* WhatIsInfoViewController.swift in Sources */,
+				B46CD9F121183ECF002C21D8 /* ToolkitViewController.swift in Sources */,
 				C8FDBF9420B4B93B0037C795 /* CurrentGoalsViewController.swift in Sources */,
 				C8D119BF20B4A9370029739F /* WriteAGoalViewController.swift in Sources */,
 				B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */,
@@ -220,6 +227,7 @@
 				C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */,
 				B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */,
 				C80DEFB22117BBA900E2604F /* GoalsCellsViewController.swift in Sources */,
+				B46CD9ED21183D6B002C21D8 /* pulsing.swift in Sources */,
 				C88F2A9E206482110039194A /* AppDelegate.swift in Sources */,
 				B4A396E520B12648000CDC9F /* ImprovingSkillsInfoViewController.swift in Sources */,
 			);
