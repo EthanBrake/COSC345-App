@@ -8,17 +8,22 @@
 
 import UIKit
 
+var listItemArray: [String] = Array()
+var descGoal: [String] = Array()
+//var descGoal = ["Stay focused!"]
+var myIndex = 0
+
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     
     @IBOutlet weak var tblList: UITableView!
     
-    var listItemArray: [String] = Array()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        descGoal.append("Stay Focused!")
         listItemArray.append("Work")
         
         tblList.register(UINib.init(nibName: "TableViewCellGoal", bundle: nil), forCellReuseIdentifier: "CheckListIdentifier")
@@ -57,8 +62,11 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return 50.0
     }
-
-    //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    //myIndex is always the cell that the user taps on
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "toViewGoalSegue", sender: self)
+    }
     /*
     // MARK: - Navigation
 
