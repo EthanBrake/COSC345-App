@@ -52,7 +52,6 @@ class CurrentGoalsViewController: UIViewController, UITableViewDelegate,UITableV
         } else if editingStyle == .insert {
             
         }
-    
     }
     
     override func viewDidLoad() {

@@ -15,6 +15,7 @@
 		C80DEFAF2117BAEA00E2604F /* TableViewCellGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */; };
 		C80DEFB02117BAEA00E2604F /* TableViewCellGoal.xib in Resources */ = {isa = PBXBuildFile; fileRef = C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */; };
 		C80DEFB22117BBA900E2604F /* GoalsCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */; };
+		C80DEFB42117F84D00E2604F /* DisplayGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFB32117F84D00E2604F /* DisplayGoalViewController.swift */; };
 		C82D0920210FD4E000B5A4B3 /* UnChecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */; };
 		C82D0921210FD4E000B5A4B3 /* Checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091D210FD4DD00B5A4B3 /* Checked@2x.png */; };
 		C82D0922210FD4E000B5A4B3 /* UnChecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */; };
@@ -44,6 +45,7 @@
 		C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGoal.swift; sourceTree = "<group>"; };
 		C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellGoal.xib; sourceTree = "<group>"; };
 		C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsCellsViewController.swift; sourceTree = "<group>"; };
+		C80DEFB32117F84D00E2604F /* DisplayGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayGoalViewController.swift; sourceTree = "<group>"; };
 		C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnChecked@2x.png"; sourceTree = "<group>"; };
 		C82D091D210FD4DD00B5A4B3 /* Checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked@2x.png"; sourceTree = "<group>"; };
 		C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnChecked@3x.png"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */,
 				C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */,
 				C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */,
+				C80DEFB32117F84D00E2604F /* DisplayGoalViewController.swift */,
 			);
 			path = COSC345;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				C8D119C320B4AFAD0029739F /* WhatisAGoalViewController.swift in Sources */,
 				C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */,
 				B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */,
+				C80DEFB42117F84D00E2604F /* DisplayGoalViewController.swift in Sources */,
 				C80DEFB22117BBA900E2604F /* GoalsCellsViewController.swift in Sources */,
 				C88F2A9E206482110039194A /* AppDelegate.swift in Sources */,
 				B4A396E520B12648000CDC9F /* ImprovingSkillsInfoViewController.swift in Sources */,
