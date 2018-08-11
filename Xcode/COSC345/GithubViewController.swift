@@ -1,39 +1,37 @@
 //
-//  LivingWithInfoViewController.swift
+//  GithubViewController.swift
 //  COSC345
 //
-//  Created by Nathan Laing on 5/20/18.
+//  Created by Nathan Laing on 8/11/18.
 //  Copyright © 2018 Ethan Brake. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class LivingWithInfoViewController: UIViewController {
+class GithubViewController: UIViewController {
 
     @IBOutlet weak var webview: WKWebView!
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let url = URL(string: "http://www.anxiety.org.nz")!
+        let url = URL(string: "https://github.com/EthanBrake/COSC345-App")!
         let request = URLRequest(url: url)
         
         webview.load(request)
     }
-
+    
 
     /*
     // MARK: - Navigation

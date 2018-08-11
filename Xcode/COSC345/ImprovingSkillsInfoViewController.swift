@@ -25,7 +25,7 @@ class ImprovingSkillsInfoViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let url = URL(string: "http://www.improveyoursocialskills.com/basic-social-skills-guide")!
+        let url = URL(string: "https://www.improveyoursocialskills.com/basic-social-skills-guide")!
         let request = URLRequest(url: url)
         
         webview.load(request)

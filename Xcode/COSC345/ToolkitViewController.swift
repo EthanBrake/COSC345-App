@@ -31,7 +31,7 @@ import UIKit
     
     func addPulse(){
         let pulse = pulsing(radius: 160, position: avatarImageView.center)
-        pulse.animationDuration = 3
+        pulse.animationDuration = 4
         pulse.backgroundColor = UIColor.blue.cgColor
         self.view.layer.insertSublayer(pulse, below: avatarImageView.layer)
         

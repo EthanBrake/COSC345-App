@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
     //This function applies a button function to the Second VC from the MainVC
     @IBAction func clickSecondVC(_ sender: AnyObject) {
         // Creates a constant variable using storyboard
