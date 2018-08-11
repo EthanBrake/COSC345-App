@@ -8,6 +8,8 @@ These include weblinks to various sites, a goal sysytem to encourage them to pra
 # Documentation
 Beta Report: https://docs.google.com/document/d/1dczWDyLyp4L_8sd4i9yD0-9SBHVMnIAXsk2WqaFZP74/edit?usp=sharing
 
+Surveys: https://docs.google.com/spreadsheets/d/16KJjGSys_ntRUO2xxB5ceBuOhfZwysds7_j4TTxCtuA/edit?usp=sharing
+
 Notes: https://docs.google.com/document/d/1iPY2PJTLf4bqvEFbSZoct1ZgOqqkxtdP3_KxPWssUZo/edit?usp=sharing
 https://docs.google.com/document/d/118LZ-uFYpRPv0Ov_5PrEmzKS0z9daTL8LZfRi9YPtas/edit?usp=sharing
 
