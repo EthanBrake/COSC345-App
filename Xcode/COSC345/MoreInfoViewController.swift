@@ -25,7 +25,8 @@ class MoreInfoViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let url = URL(string: "https://www.verywellmind.com/social-anxiety-support-groups-3024876")!
+        let url = URL(string: "https://www.healthnavigator.org.nz/health-a-z/s/social-phobia/")!
+        
         let request = URLRequest(url: url)
         
         webview.load(request)

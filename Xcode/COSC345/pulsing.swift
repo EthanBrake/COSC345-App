@@ -13,8 +13,8 @@ class pulsing: CALayer {
     
     var initialPulseScale:Float = 0.2
     var nextPulseAfter:TimeInterval = 0
-    var animationDuration:TimeInterval = 2
-    var radius:CGFloat = 200
+    var animationDuration:TimeInterval = 3
+    var radius:CGFloat = 145
     var numberOfPulses:Float = Float.infinity
     
     

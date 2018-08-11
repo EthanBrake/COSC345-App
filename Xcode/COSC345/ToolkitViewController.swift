@@ -18,7 +18,7 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Tool-Kit"
+        self.title = "Breathing Exercise"
         
         avatarImageView.isUserInteractionEnabled = true
         let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ForthViewController.addPulse))
@@ -30,7 +30,7 @@ import UIKit
     }
     
     func addPulse(){
-        let pulse = pulsing(radius: 160, position: avatarImageView.center)
+        let pulse = pulsing(radius: 145, position: avatarImageView.center)
         pulse.animationDuration = 3
         pulse.backgroundColor = UIColor.blue.cgColor
         self.view.layer.insertSublayer(pulse, below: avatarImageView.layer)
