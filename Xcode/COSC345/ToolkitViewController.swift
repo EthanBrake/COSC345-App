@@ -18,7 +18,7 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Tool-Kit"
+        self.title = "Breathing Exercise"
         
         avatarImageView.isUserInteractionEnabled = true
         let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ForthViewController.addPulse))

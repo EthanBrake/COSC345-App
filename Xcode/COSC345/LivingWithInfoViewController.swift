@@ -26,7 +26,7 @@ class LivingWithInfoViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let url = URL(string: "https://www.healthnavigator.org.nz/health-a-z/s/social-phobia/")!
+        let url = URL(string: "https://www.anxiety.org.nz")!
         let request = URLRequest(url: url)
         
         webview.load(request)
