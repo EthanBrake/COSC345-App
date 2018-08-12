@@ -14,6 +14,7 @@ import UIKit
     @IBOutlet weak var avatarImageView: UIImageView!
     
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +23,19 @@ import UIKit
         
         avatarImageView.isUserInteractionEnabled = true
         let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ForthViewController.addPulse))
+        let stopTapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ForthViewController.stopAnimation))
         
         tapGestureRecogniser.numberOfTapsRequired = 1
         startButton.addGestureRecognizer(tapGestureRecogniser)
+        
+        stopTapGestureRecogniser.numberOfTapsRequired = 1
+        stopButton.addGestureRecognizer(stopTapGestureRecogniser)
 
         // Do any additional setup after loading the view.
+    }
+    
+    func stopAnimation(){
+        
     }
     
     func addPulse(){
