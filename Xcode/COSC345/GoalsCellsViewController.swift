@@ -8,6 +8,8 @@
 
 import UIKit
 
+let defaultss = UserDefaults(suiteName: "345App")
+
 var listItemArray: [String] = Array()
 var descGoal: [String] = Array()
 //var descGoal = ["Stay focused!"]
@@ -16,19 +18,31 @@ var myIndex = 0
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
+    @IBOutlet weak var addGoalButton: UIButton!
     
     @IBOutlet weak var tblList: UITableView!
     
-
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        //self.navigationController?.setNavigationBarHidden(false, animated: false)
+        getData()
+        
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        storeData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         descGoal.append("Stay Focused!")
-        listItemArray.append("Work")
+        //listItemArray.append("Work")
         
-        tblList.register(UINib.init(nibName: "TableViewCellGoal", bundle: nil), forCellReuseIdentifier: "CheckListIdentifier")
+        tblList.register(UINib.init(nibName: "TableViewCellGoal", bundle: nil), forCellReuseIdentifier: "addGoals")
         tblList.dataSource = self
         tblList.delegate = self
+        
+        //identifier CheckListIdentifier
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,8 +55,8 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListIdentifier") as! TableViewCellGoal
-        
+        let cell = tblList.dequeueReusableCell(withIdentifier: "addGoals") as! TableViewCellGoal
+        //changed to tblList from tableView
         cell.lblTitle.text = listItemArray[indexPath.row]
         cell.selectionStyle = .none
         cell.btnCheckMark.addTarget(self, action: #selector(checkMarkedButtonClicked(sender:)), for: .touchUpInside)
@@ -72,14 +86,56 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == UITableViewCellEditingStyle.delete{
             listItemArray.remove(at: indexPath.row)
-            tableView.reloadData()
+           // listItemArray.deleteRows(at: [indexPath], with: .fade)
+            
+            tblList.reloadData() //LAST CHANGED
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    
+    
+    @IBAction func newGoalPressed(_ sender: Any) {
+        addTableRow()
+    }
+    
+    func addTableRow(){
+        //This creates a UI alert
+        let alert = UIAlertController(title: "My Goal:", message: "Create your goal:", preferredStyle: .alert)
+        //Adds a text field to the alert
+        alert.addTextField{(textField) in
+            textField.placeholder = "Enter goal here"
+        }
+        //Adds a confirm button
+        alert.addAction(UIAlertAction(title: "Confirm Goal", style: .default, handler: {[weak alert](_) in
+            let text = alert?.textFields![0]
+            listItemArray.append((text?.text)!)
+            self.tblList.rowHeight = UITableViewAutomaticDimension
+            self.tblList.reloadData()
+            
+            
+        }))
+        //Present alert
+        self.present(alert, animated: true, completion: nil)
+        storeData()
         
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        
+    }
+    
+    //storing app data
+    func storeData(){
+        defaultss?.set(listItemArray, forKey: "savedData")
+        //self.tableView.rowHeight = UITableViewAutomaticDimension
+        defaultss?.synchronize()
+    }
+    
+    
+    //getting app data
+    func getData(){
+        let data = defaultss?.value(forKey: "savedData")
+        if data != nil {
+            listItemArray = data as! [String]
+        } else{
+            
+        }
     }
     /*
     // MARK: - Navigation
