@@ -9,6 +9,8 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var myrowIndex = 0
+    
     var list: [String] = []
     
     let listUserDefault = UserDefaults.standard
@@ -39,8 +41,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @IBOutlet weak var input: UITextField!
-    
-    let currentDate = NSDate()
 
     @IBAction func additem(_ sender: Any) {
         if(input.text != "")
@@ -58,9 +58,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if let list = listUserDefault.stringArray(forKey: "best"){
             self.list = list
         }
-        
-        input.returnKeyType = UIReturnKeyType.done
-        
+
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.rowHeight = UITableViewAutomaticDimension
@@ -74,15 +72,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
+    //myIndex is always the cell that the user taps on
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        myrowIndex = indexPath.row
+        performSegue(withIdentifier: "JournalConnect", sender: self)
+    }
 }
