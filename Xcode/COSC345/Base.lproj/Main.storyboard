@@ -75,13 +75,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qw5-bx-inc" userLabel="Middle Pages Stack View">
-                                        <rect key="frame" x="77.333333333333343" y="252" width="259.66666666666663" height="124"/>
+                                        <rect key="frame" x="39" y="252" width="336" height="124"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-Ea-neh" userLabel="Information Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="124"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRL-l3-wO2">
-                                                        <rect key="frame" x="4.6666666666666714" y="0.0" width="100" height="100"/>
+                                                        <rect key="frame" x="5" y="0.0" width="100" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="XMs-T0-UV0"/>
                                                             <constraint firstAttribute="width" constant="100" id="gjS-L3-5lT"/>
@@ -100,10 +100,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-9F-LzU" userLabel="Tool Kit Stack View">
-                                                <rect key="frame" x="159.66666666666669" y="0.0" width="100" height="124"/>
+                                                <rect key="frame" x="159.66666666666663" y="0.0" width="176.33333333333337" height="124"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WD-7o-sRa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <rect key="frame" x="38.333333333333343" y="0.0" width="100" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="44W-3X-WLJ"/>
                                                             <constraint firstAttribute="height" constant="100" id="gsz-NG-jg1"/>
@@ -113,8 +113,8 @@
                                                             <segue destination="VtF-6O-fXz" kind="show" id="33t-Tj-9XH"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tool Kit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-ZC-IsO">
-                                                        <rect key="frame" x="15" y="100" width="69.666666666666671" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathing Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-ZC-IsO">
+                                                        <rect key="frame" x="0.0" y="100" width="176.33333333333334" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -215,7 +215,7 @@
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="mxu-hU-357">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="mxu-hU-357">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mxu-hU-357" id="SDW-60-Jg4">
@@ -427,7 +427,7 @@
                                 <rect key="frame" x="0.0" y="191" width="414" height="475"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rows" id="uti-76-KRa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rows" id="uti-76-KRa">
                                         <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uti-76-KRa" id="v1R-Ne-XZl">
@@ -548,10 +548,10 @@
             </objects>
             <point key="canvasLocation" x="3204" y="-1389"/>
         </scene>
-        <!--Tool Kit View-->
+        <!--Breathing Exercise-->
         <scene sceneID="Y3t-56-gq3">
             <objects>
-                <viewController storyboardIdentifier="ForthViewController" title="Tool Kit View" id="VtF-6O-fXz" customClass="ForthViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForthViewController" title="Breathing Exercise" id="VtF-6O-fXz" customClass="ForthViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xOP-6Z-GDP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -573,7 +573,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Stop">
-                                    <color key="titleColor" red="1" green="0.34881375840000001" blue="0.21292331840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mandala" translatesAutoresizingMaskIntoConstraints="NO" id="IcS-me-oAP">
@@ -586,7 +586,7 @@
                                 <rect key="frame" x="178" y="489" width="58" height="123"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.39647061696980412" green="1" blue="0.21865766917689367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
@@ -1047,6 +1047,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Zco-pK-7Cr">
+                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuZ-31-L80">
                                 <rect key="frame" x="82" y="164" width="250" height="85"/>
                                 <constraints>
@@ -1215,15 +1219,15 @@
     </scenes>
     <resources>
         <image name="Git" width="500" height="205"/>
-        <image name="background" width="1600" height="2560"/>
+        <image name="background" width="750" height="1334"/>
         <image name="contact" width="512" height="512"/>
         <image name="diary" width="512" height="512"/>
         <image name="facebook" width="1024" height="202"/>
         <image name="goals" width="512" height="512"/>
         <image name="info" width="512" height="512"/>
-        <image name="mandala" width="196" height="195"/>
+        <image name="mandala" width="200" height="156"/>
         <image name="settings" width="512" height="512"/>
-        <image name="toolkit" width="512" height="411"/>
+        <image name="toolkit" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Fop-cL-x81"/>

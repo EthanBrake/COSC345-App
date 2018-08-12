@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "mandala.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png",
       "scale" : "2x"
     },
     {

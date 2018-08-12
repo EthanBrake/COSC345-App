@@ -28,19 +28,6 @@ class FacebookViewController: UIViewController {
         
         let url = URL(string: "https://www.facebook.com/groups/2136889883304300/")!
         let request = URLRequest(url: url)
-        
         webview.load(request)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

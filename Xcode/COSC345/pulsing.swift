@@ -10,14 +10,14 @@ import UIKit
 
 class pulsing: CALayer {
     var animationGroup = CAAnimationGroup()
-    
+    // Settings for animation
     var initialPulseScale:Float = 0.2
     var nextPulseAfter:TimeInterval = 0
     var animationDuration:TimeInterval = 4
     var radius:CGFloat = 200
     var numberOfPulses:Float = Float.infinity
     
-    
+    //Initialisers
     override init(layer: Any) {
         super.init(layer: layer)
     }
@@ -25,7 +25,6 @@ class pulsing: CALayer {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
     
     init (numberOfPulses:Float = Float.infinity, radius:CGFloat, position:CGPoint) {
         super.init()
@@ -40,7 +39,6 @@ class pulsing: CALayer {
         self.bounds = CGRect(x: 0, y: 0, width: radius * 2, height: radius * 2)
         self.cornerRadius = radius
         
-        
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
             self.setupAnimationGroup()
             
@@ -48,11 +46,7 @@ class pulsing: CALayer {
                 self.add(self.animationGroup, forKey: "pulse")
             }
         }
-        
-        
-        
     }
-    
     
     func createScaleAnimation () -> CABasicAnimation {
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale.xy")
@@ -70,7 +64,6 @@ class pulsing: CALayer {
         opacityAnimation.values = [0.4, 0.8, 0]
         opacityAnimation.keyTimes = [0, 0.2, 1]
         
-        
         return opacityAnimation
     }
     
@@ -84,11 +77,5 @@ class pulsing: CALayer {
         self.animationGroup.timingFunction = defaultCurve
         
         self.animationGroup.animations = [createScaleAnimation(), createOpacityAnimation()]
-        
-        
     }
-    
-    
-    
-
 }

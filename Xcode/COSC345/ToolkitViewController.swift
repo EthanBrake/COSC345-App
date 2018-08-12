@@ -10,9 +10,7 @@ import UIKit
 
 @objcMembers class ForthViewController: UIViewController, UITextFieldDelegate {
 
-
     @IBOutlet weak var avatarImageView: UIImageView!
-    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
@@ -34,11 +32,11 @@ import UIKit
         // Do any additional setup after loading the view.
     }
     
-    func stopAnimation(){
+    func stopAnimation(){ // Stop button animation code will go here.
         
     }
     
-    func addPulse(){
+    func addPulse(){ // Creates an animation instance
         let pulse = pulsing(radius: 160, position: avatarImageView.center)
         pulse.animationDuration = 4
         pulse.backgroundColor = UIColor.blue.cgColor
@@ -50,16 +48,4 @@ import UIKit
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
