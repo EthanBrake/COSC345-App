@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10F74012211FE3E600097760 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F74011211FE3E600097760 /* JournalViewController.swift */; };
 		B457BB49211E91F000DC6CD0 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB48211E91F000DC6CD0 /* ContactUsViewController.swift */; };
 		B457BB4B211E999C00DC6CD0 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB4A211E999C00DC6CD0 /* GithubViewController.swift */; };
 		B457BB4D211E99BF00DC6CD0 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB4C211E99BF00DC6CD0 /* FacebookViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10F74011211FE3E600097760 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		B457BB48211E91F000DC6CD0 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		B457BB4A211E999C00DC6CD0 /* GithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubViewController.swift; sourceTree = "<group>"; };
 		B457BB4C211E99BF00DC6CD0 /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */,
 				C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */,
 				C836EA8A2119008800A00EBF /* ViewGoalsViewController.swift */,
+				10F74011211FE3E600097760 /* JournalViewController.swift */,
 			);
 			path = COSC345;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */,
 				C88F2AA0206482110039194A /* ViewController.swift in Sources */,
 				C88F2AB4206485E30039194A /* ThirdViewController.swift in Sources */,
+				10F74012211FE3E600097760 /* JournalViewController.swift in Sources */,
 				C8D119C320B4AFAD0029739F /* WhatisAGoalViewController.swift in Sources */,
 				C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */,
 				B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */,

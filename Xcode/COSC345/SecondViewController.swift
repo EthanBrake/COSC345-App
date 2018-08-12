@@ -9,6 +9,8 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var myindex = 0
+    
     var list: [String] = []
     
     let listUserDefault = UserDefaults.standard
@@ -39,8 +41,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @IBOutlet weak var input: UITextField!
-    
-    let currentDate = NSDate()
 
     @IBAction func additem(_ sender: Any) {
         if(input.text != "")
@@ -52,6 +52,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myindex = indexPath.row
+        performSegue(withIdentifier: "JournalSegue", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,13 +65,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.list = list
         }
         
-        input.returnKeyType = UIReturnKeyType.done
-        
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.rowHeight = UITableViewAutomaticDimension
 
-        self.title = "Second"
+        
         // Do any additional setup after loading the view.
     }
 
