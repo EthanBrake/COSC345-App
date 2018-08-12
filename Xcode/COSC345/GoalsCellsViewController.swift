@@ -11,20 +11,17 @@ import UIKit
 let defaultss = UserDefaults(suiteName: "345App")
 
 var listItemArray: [String] = Array()
-var descGoal: [String] = Array()
-//var descGoal = ["Stay focused!"]
 var myIndex = 0
+
 
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     @IBOutlet weak var addGoalButton: UIButton!
-    
     @IBOutlet weak var tblList: UITableView!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        //self.navigationController?.setNavigationBarHidden(false, animated: false)
         getData()
         
     }
@@ -35,12 +32,14 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        descGoal.append("Stay Focused!")
-        //listItemArray.append("Work")
-        
+        //Gets user data as application loads
+        getData()
+
+        //This gets the custom view cell from the .xib file
         tblList.register(UINib.init(nibName: "TableViewCellGoal", bundle: nil), forCellReuseIdentifier: "addGoals")
         tblList.dataSource = self
         tblList.delegate = self
+        tblList.rowHeight = UITableViewAutomaticDimension
         
         //identifier CheckListIdentifier
     }
@@ -60,9 +59,18 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         cell.lblTitle.text = listItemArray[indexPath.row]
         cell.selectionStyle = .none
         cell.btnCheckMark.addTarget(self, action: #selector(checkMarkedButtonClicked(sender:)), for: .touchUpInside)
+        cell.textLabel?.numberOfLines = 0
         return cell
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+        return UITableViewAutomaticDimension
+    }
+  
     @objc func checkMarkedButtonClicked( sender: UIButton){
         if sender.isSelected{
             //uncheck button
@@ -73,9 +81,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        return 50.0
-    }
+
     //myIndex is always the cell that the user taps on
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         myIndex = indexPath.row
@@ -88,7 +94,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
             listItemArray.remove(at: indexPath.row)
            // listItemArray.deleteRows(at: [indexPath], with: .fade)
             
-            tblList.reloadData() //LAST CHANGED
+            tblList.reloadData()
         }
     }
     

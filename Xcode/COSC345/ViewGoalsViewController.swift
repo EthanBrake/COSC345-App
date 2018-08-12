@@ -12,7 +12,6 @@ class ViewGoalsViewController: UIViewController {
 
     @IBOutlet weak var goalLabel: UILabel!
     
-    @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
     
     
@@ -22,7 +21,7 @@ class ViewGoalsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         goalLabel.text = listItemArray[myIndex]
-        descLabel.text = descGoal[myIndex]
+
     }
 
     override func didReceiveMemoryWarning() {
