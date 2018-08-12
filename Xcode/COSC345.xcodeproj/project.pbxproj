@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1010499521200B7C009A2330 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1010499421200B7C009A2330 /* JournalViewController.swift */; };
 		B457BB49211E91F000DC6CD0 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB48211E91F000DC6CD0 /* ContactUsViewController.swift */; };
 		B457BB4B211E999C00DC6CD0 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB4A211E999C00DC6CD0 /* GithubViewController.swift */; };
 		B457BB4D211E99BF00DC6CD0 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB4C211E99BF00DC6CD0 /* FacebookViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1010499421200B7C009A2330 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		B457BB48211E91F000DC6CD0 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		B457BB4A211E999C00DC6CD0 /* GithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubViewController.swift; sourceTree = "<group>"; };
 		B457BB4C211E99BF00DC6CD0 /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				B46CD9EE21183DA9002C21D8 /* mandala-mandalas-ornaments-doodles-pattern-circle-decorations-6-512.png */,
 				C88F2A9F206482110039194A /* ViewController.swift */,
 				C88F2AA1206482120039194A /* Main.storyboard */,
+				1010499421200B7C009A2330 /* JournalViewController.swift */,
 				B4A396E420B12648000CDC9F /* ImprovingSkillsInfoViewController.swift */,
 				B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */,
 				B457BB4C211E99BF00DC6CD0 /* FacebookViewController.swift */,
@@ -239,6 +242,7 @@
 				B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */,
 				C88F2AA0206482110039194A /* ViewController.swift in Sources */,
 				C88F2AB4206485E30039194A /* ThirdViewController.swift in Sources */,
+				1010499521200B7C009A2330 /* JournalViewController.swift in Sources */,
 				C8D119C320B4AFAD0029739F /* WhatisAGoalViewController.swift in Sources */,
 				C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */,
 				B4A396E720B12661000CDC9F /* MoreInfoViewController.swift in Sources */,

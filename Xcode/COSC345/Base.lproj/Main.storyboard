@@ -262,6 +262,7 @@
                     <connections>
                         <outlet property="input" destination="kgW-ng-MMd" id="HhA-B2-ub8"/>
                         <outlet property="myTableView" destination="jkr-Az-yCq" id="9Mg-mi-IU3"/>
+                        <segue destination="p41-xc-8Ql" kind="show" identifier="JournalConnect" id="ulu-cy-cAw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kht-he-Ux0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1194,6 +1195,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Off-oa-elA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="998.55072463768124" y="104.34782608695653"/>
+        </scene>
+        <!--Journal View Controller-->
+        <scene sceneID="oB4-kY-X7s">
+            <objects>
+                <viewController id="p41-xc-8Ql" customClass="JournalViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F19-kT-0v4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="TLh-ES-alg">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGC-xd-cu7">
+                                <rect key="frame" x="0.0" y="64" width="415" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="New Entry">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="JournalNewEntry:" destination="p41-xc-8Ql" eventType="touchUpInside" id="rZf-C4-fBX"/>
+                                    <action selector="additem:" destination="2X3-wV-VHU" eventType="touchUpInside" id="wrp-8Q-9GR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAD-vm-Kbs">
+                                <rect key="frame" x="24" y="134" width="367" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tcw-cj-s0Y">
+                                <rect key="frame" x="20" y="197" width="371" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3Od-Zs-fqU"/>
+                    </view>
+                    <connections>
+                        <outlet property="DisplayField" destination="tcw-cj-s0Y" id="liY-zG-YlM"/>
+                        <outlet property="journalinput" destination="uAD-vm-Kbs" id="egg-21-uC9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffC-nc-hUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236.23188405797103" y="-2041.3043478260872"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sP2-oN-8cW">
