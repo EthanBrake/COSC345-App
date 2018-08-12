@@ -4,7 +4,6 @@
 //
 //  Created by Ethan Brake on 3/23/18.
 //  Copyright © 2018 Ethan Brake. All rights reserved.
-//
 
 import UIKit
 
@@ -41,6 +40,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var input: UITextField!
     
+    let currentDate = NSDate()
+
     @IBAction func additem(_ sender: Any) {
         if(input.text != "")
         {
@@ -58,15 +59,16 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.list = list
         }
         
+        input.returnKeyType = UIReturnKeyType.done
+        
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.rowHeight = UITableViewAutomaticDimension
-        
-        
+
         self.title = "Second"
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
