@@ -8,15 +8,17 @@
 
 import UIKit
 
-var journallist: [String] = []
-var myJournalIndex = 0
+var editDataArray: [String] = Array()
 
 class JournalViewController: UIViewController {
     
     
+    @IBOutlet weak var journalLabel: UILabel!
+    
+    @IBOutlet weak var testText: UITextField!
+    
     @IBOutlet weak var journalinput: UITextField!
     
-    @IBOutlet weak var DisplayField: UITextView!
     
     @IBAction func JournalNewEntry(_ sender: AnyObject) {
         
@@ -26,7 +28,10 @@ class JournalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DisplayField.text = journallist[myJournalIndex]
+        journalLabel.text = list[myrowIndex]
+        testText.text = list[myrowIndex]
+        
+       // DisplayField.text = journallist[myJournalIndex]
     
     }
     
@@ -38,7 +43,7 @@ class JournalViewController: UIViewController {
     
     //storing app data
     func storeData(){
-        defaultss?.set(journallist, forKey: "savedJournalData")
+        defaultss?.set(editDataArray, forKey: "savedJournalData")
         defaultss?.synchronize()
     }
     
@@ -47,7 +52,7 @@ class JournalViewController: UIViewController {
     func getData(){
         let data = defaultss?.value(forKey: "savedJournalData")
         if data != nil {
-            journallist = data as! [String]
+            editDataArray = data as! [String]
         } else{
             
         }

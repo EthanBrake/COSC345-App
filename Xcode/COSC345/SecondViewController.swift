@@ -7,11 +7,11 @@
 
 import UIKit
 
+var myrowIndex = 0
+var list: [String] = []
+
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var myrowIndex = 0
-    
-    var list: [String] = []
     
     let listUserDefault = UserDefaults.standard
     
@@ -34,7 +34,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     {
         if editingStyle == UITableViewCellEditingStyle.delete
         {
-            self.list.remove(at: indexPath.row)
+            list.remove(at: indexPath.row)
             listUserDefault.set(list, forKey: "best")
             myTableView.reloadData()
         }
@@ -55,9 +55,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let list = listUserDefault.stringArray(forKey: "best"){
-            self.list = list
-        }
+//        if let list = listUserDefault.stringArray(forKey: "best"){
+//            list = list
+//        }
 
         myTableView.delegate = self
         myTableView.dataSource = self
