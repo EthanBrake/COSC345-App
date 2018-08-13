@@ -15,7 +15,7 @@ class JournalViewController: UIViewController {
     
     @IBOutlet weak var journalLabel: UILabel!
     
-    @IBOutlet weak var testText: UITextField!
+
     
     @IBOutlet weak var journalinput: UITextField!
     
@@ -29,7 +29,7 @@ class JournalViewController: UIViewController {
         super.viewDidLoad()
         
         journalLabel.text = list[myrowIndex]
-        testText.text = list[myrowIndex]
+      
         
        // DisplayField.text = journallist[myJournalIndex]
     
@@ -41,20 +41,5 @@ class JournalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //storing app data
-    func storeData(){
-        defaultss?.set(editDataArray, forKey: "savedJournalData")
-        defaultss?.synchronize()
-    }
-    
-    
-    //getting app data
-    func getData(){
-        let data = defaultss?.value(forKey: "savedJournalData")
-        if data != nil {
-            editDataArray = data as! [String]
-        } else{
-            
-        }
-    }
+
 }

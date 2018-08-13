@@ -46,28 +46,27 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         // Dispose of any resources that can be recreated.
     }
     
+    //Tells the data source to return the number of rows in a given section of a table view.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listItemArray.count
     }
     
+    //Asks the data source for a cell to insert in a particular location of the table view.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblList.dequeueReusableCell(withIdentifier: "addGoals") as! TableViewCellGoal
-        //changed to tblList from tableView
         cell.textLabel?.text = listItemArray[indexPath.row] // changes to textLabel from tblList, enabled ... at end of sentence. 
         cell.selectionStyle = .none
-        cell.btnCheckMark.addTarget(self, action: #selector(checkMarkedButtonClicked(sender:)), for: .touchUpInside)
+        cell.btnCheckMark.addTarget(self, action: #selector(checkMarkedButtonClicked(sender:)), for: .touchUpInside) //when checkmark is clicked
         cell.textLabel?.numberOfLines = 0
         return cell
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
-    
+    //Asks the delegate for the height to use for a row in a specified location.
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return UITableViewAutomaticDimension
     }
   
+    //When my checkmark button is selected or deselected
     @objc func checkMarkedButtonClicked( sender: UIButton){
         if sender.isSelected{
             //uncheck button
@@ -77,9 +76,8 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
             sender.isSelected = true
         }
     }
-
-
-    //myIndex is always the cell that the user taps on
+    
+    //Tells the delegate that the specified row is now selected. myIndex is the current row, once clicked performs a segue to view the selected Goal
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         myIndex = indexPath.row
         performSegue(withIdentifier: "toViewGoalSegue", sender: self)
@@ -96,11 +94,11 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     
-    
+    //This button called my alert
     @IBAction func newGoalPressed(_ sender: Any) {
         addTableRow()
     }
-    
+        //Alert func which allows the user to input a goal
     func addTableRow(){
         //This creates a UI alert
         let alert = UIAlertController(title: "My Goal:", message: "Create your goal:", preferredStyle: .alert)
