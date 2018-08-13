@@ -346,19 +346,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="Day-eG-TDD">
-                                    <rect key="frame" x="0.0" y="117.33333333333337" width="414" height="672"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Lm9-Pk-TXj">
-                                        <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lm9-Pk-TXj" id="Pjt-rV-JDS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <sections/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kn-Dn-oGy">
@@ -413,7 +403,7 @@
                                 <rect key="frame" x="87" y="283" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Displays the goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz9-4h-bfo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Displays the goal" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz9-4h-bfo">
                                 <rect key="frame" x="20" y="102" width="374" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.56900149828767121" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -664,10 +654,15 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tke-gG-3fF">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
-                                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52F-jq-ESY">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rGB-Jt-Ykw">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                            </imageView>
+                                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52F-jq-ESY">
                                                 <rect key="frame" x="8" y="220" width="398" height="116"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="1" alpha="0.75438784246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="116" id="ff0-5h-iOb"/>
+                                                </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">Setting Goals are a way to think about your ideal future, they are an important and powerful process for self motivation. They help turn your vision into reality. Goals help you focus on what's important to you and helps you organise your time and resources so that you can make the the most out of your days.</string>
@@ -679,27 +674,32 @@
                                                 </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Set a Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-Ge-XHn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Set a Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-Ge-XHn">
                                                 <rect key="frame" x="8" y="8" width="398" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="398" id="54m-be-8Iz"/>
+                                                    <constraint firstAttribute="height" constant="45" id="dP2-On-Vso"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why Set Goals?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zu3-3K-iwm">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why Set Goals?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zu3-3K-iwm">
                                                 <rect key="frame" x="8" y="167" width="398" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-7N-I28">
-                                                <rect key="frame" x="8" y="61" width="398" height="99.666666666666671"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-7N-I28">
+                                                <rect key="frame" x="8" y="61" width="398" height="100"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="99.670000000000002" id="eq1-fx-I4s"/>
+                                                    <constraint firstAttribute="width" constant="398" id="z23-bi-VOd"/>
+                                                </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">Firstly, consider what you want to achieve, and then most importantly commit to it! In this section we will cover how to set a SMART goal. A smart goal is specific, measurable, attainable, relevent and time-bound. If you follow these steps you will be able to realise your goal and achieve it.</string>
+                                                        <string key="content">Firstly, consider what you want to achieve, and then most importantly commit to it! In this section we will cover how to set a SMART goal. A smart goal is specific, measurable, attainable, relevant and time-bound. If you follow these steps you will be able to realize your goal and achieve it.</string>
                                                         <attributes>
                                                             <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -708,13 +708,12 @@
                                                 </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-hd-TgX">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-hd-TgX">
                                                 <rect key="frame" x="8" y="397" width="398" height="166"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="1" alpha="0.74957191776438359" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">Set your goals on a number of levels: First create your "big picture" of what you want to achieve in your life (this could be 1 year or 10, you decide), and identify the large-scale goals that you want to achieve. For example: "I would like to walk through town without feeling anxious about the people around me". You then break this down into smaller and smaller easier targets that you must hit to reach your overall life time Goal. Once you have a plan you can work on achieving these goals.</string>
+                                                        <string key="content">Set your goals on a number of levels: First create your "big picture" of what you want to achieve with this Application, and identify the large-scale goals that you want to achieve. For example: "I would like to walk through town without feeling anxious about the people around me". You then break this down into smaller and smaller easier targets that you must hit to reach your overall life time Goal. Once you have a plan you can work on achieving these goals.</string>
                                                         <attributes>
                                                             <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -723,31 +722,163 @@
                                                 </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thinking of the Big Picture." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgf-dS-qlQ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thinking of the Big Picture." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgf-dS-qlQ">
                                                 <rect key="frame" x="8" y="344" width="398" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="1xL-3a-IM7"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 1: Lifetime Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkh-kr-x7R">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specific Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkh-kr-x7R">
                                                 <rect key="frame" x="8" y="571" width="398" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="hRb-vj-Fp1"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Consider what ou want to achieve in your lifeime (or at least, some distant time in the future). " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KlF-Pk-ee3">
-                                                <rect key="frame" x="8" y="624" width="398" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Measureable Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRq-Xe-JAw">
+                                                <rect key="frame" x="8" y="716" width="398" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="cPp-8b-V47"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attainable Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wc-to-a4k">
+                                                <rect key="frame" x="8" y="861" width="398" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zn-Ou-uYv">
+                                                <rect key="frame" x="8" y="1006" width="398" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="4jJ-FI-kd2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time-Bound Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-q9-eFy">
+                                                <rect key="frame" x="8" y="1151" width="398" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="HHS-jo-rHH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KlF-Pk-ee3">
+                                                <rect key="frame" x="8" y="624" width="398" height="84"/>
+                                                <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Make sure your goal is clear and well defined. If it's too generalized then it won't provide direction. Goals show you the way, specificly aim where you want to go by defining where you want to end up. E.g. I will go for a walk.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LWj-vD-rzn">
+                                                <rect key="frame" x="8" y="769" width="398" height="84"/>
+                                                <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="cww-bB-6eI"/>
+                                                </constraints>
+                                                <string key="text">In order to measure your degree of success, include precise amounts and dates. If your goal is too simple you won't be able to measure how successful you've been. E.g. I will go for a walk outside today.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5uL-WO-70a">
+                                                <rect key="frame" x="8" y="914" width="398" height="84"/>
+                                                <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Make sure your goal is achieveable, if you set a goal that you cannot achieve, you will only demoralize yourself and erode your confidence. E.g. I will go for a walk to the park today at 3pm.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y7u-tx-6C2">
+                                                <rect key="frame" x="8" y="1059" width="398" height="84"/>
+                                                <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Your goal should be relevant to the direction you want your life and career to take. Try keep your goals aligned with this. It will help you develop focus and determination to keep moving forward. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVk-vz-Ola">
+                                                <rect key="frame" x="8" y="1204" width="398" height="64"/>
+                                                <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="UhC-y4-zWP"/>
+                                                </constraints>
+                                                <string key="text">Make sure you have a deadline for each of your goals. This allows you to celebrate success and achievement. E.g. I will go for a walk outside today at 3pm. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="MVk-vz-Ola" secondAttribute="leading" id="03Z-gm-okl"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="qkh-kr-x7R" secondAttribute="leading" id="19C-ma-8BO"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="Zu3-3K-iwm" secondAttribute="leading" id="1Sl-kV-v4j"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="pgf-dS-qlQ" secondAttribute="leading" id="1ZI-Qp-lGw"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="5uL-WO-70a" secondAttribute="trailing" id="1ix-uB-VUT"/>
+                                            <constraint firstAttribute="bottom" secondItem="rGB-Jt-Ykw" secondAttribute="bottom" id="3Zi-BV-1OF"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="7Wc-to-a4k" secondAttribute="leading" id="4Eq-In-SmW"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="Tke-gG-3fF" secondAttribute="leading" constant="8" id="5YY-Tr-L2j"/>
+                                            <constraint firstItem="6zn-Ou-uYv" firstAttribute="top" secondItem="5uL-WO-70a" secondAttribute="bottom" constant="8" symbolic="YES" id="6al-hm-YGS"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="LWj-vD-rzn" secondAttribute="leading" id="6zw-b7-DqE"/>
+                                            <constraint firstItem="WnE-Ge-XHn" firstAttribute="leading" secondItem="Tke-gG-3fF" secondAttribute="leading" constant="8" id="8m8-jO-DUZ"/>
+                                            <constraint firstItem="qkh-kr-x7R" firstAttribute="top" secondItem="Fpc-hd-TgX" secondAttribute="bottom" constant="8" id="B94-ry-fjm"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="MVk-vz-Ola" secondAttribute="trailing" id="CQt-FE-zWP"/>
+                                            <constraint firstItem="y7u-tx-6C2" firstAttribute="top" secondItem="6zn-Ou-uYv" secondAttribute="bottom" constant="8" symbolic="YES" id="Cnx-0Q-1nH"/>
+                                            <constraint firstItem="6zn-Ou-uYv" firstAttribute="top" secondItem="5uL-WO-70a" secondAttribute="bottom" constant="8" id="Dqn-ik-0Gb"/>
+                                            <constraint firstAttribute="bottom" secondItem="6zn-Ou-uYv" secondAttribute="bottom" constant="449" id="EZ9-hv-6mG"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="y7u-tx-6C2" secondAttribute="leading" id="EfL-El-d2n"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="Zu3-3K-iwm" secondAttribute="trailing" id="Ehp-Tn-kLC"/>
+                                            <constraint firstItem="WnE-Ge-XHn" firstAttribute="top" secondItem="Tke-gG-3fF" secondAttribute="top" constant="8" id="JQh-Gg-HGx"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="6U4-q9-eFy" secondAttribute="trailing" id="KHG-wQ-8Fg"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZWh-7N-I28" secondAttribute="trailing" constant="8" id="LLL-QE-wpK"/>
+                                            <constraint firstItem="Fpc-hd-TgX" firstAttribute="top" secondItem="pgf-dS-qlQ" secondAttribute="bottom" constant="8" symbolic="YES" id="LcZ-yl-azA"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="52F-jq-ESY" secondAttribute="trailing" id="Lk0-GQ-MJ5"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="Fpc-hd-TgX" secondAttribute="leading" id="Oa9-Wo-6b0"/>
+                                            <constraint firstItem="rGB-Jt-Ykw" firstAttribute="top" secondItem="Tke-gG-3fF" secondAttribute="top" id="ObP-aQ-jla"/>
+                                            <constraint firstAttribute="trailing" secondItem="rGB-Jt-Ykw" secondAttribute="trailing" id="OiC-Nt-2jg"/>
+                                            <constraint firstItem="qkh-kr-x7R" firstAttribute="top" secondItem="Fpc-hd-TgX" secondAttribute="bottom" constant="8" symbolic="YES" id="Q9A-re-ET5"/>
+                                            <constraint firstItem="qkh-kr-x7R" firstAttribute="top" secondItem="Tke-gG-3fF" secondAttribute="top" constant="571" id="Qe5-lz-4iI"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="6zn-Ou-uYv" secondAttribute="trailing" id="QmD-ZP-J2E"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="52F-jq-ESY" secondAttribute="leading" id="RGt-Yg-O59"/>
+                                            <constraint firstItem="tRq-Xe-JAw" firstAttribute="top" secondItem="KlF-Pk-ee3" secondAttribute="bottom" constant="8" symbolic="YES" id="Std-5w-VUS"/>
+                                            <constraint firstItem="tRq-Xe-JAw" firstAttribute="top" secondItem="Tke-gG-3fF" secondAttribute="top" constant="716" id="U2U-Bz-tEe"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="Fpc-hd-TgX" secondAttribute="trailing" id="Uq3-Ds-BIH"/>
+                                            <constraint firstItem="6U4-q9-eFy" firstAttribute="top" secondItem="y7u-tx-6C2" secondAttribute="bottom" constant="8" symbolic="YES" id="VaE-wi-NCv"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="6zn-Ou-uYv" secondAttribute="leading" id="Whc-Az-0yr"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="LWj-vD-rzn" secondAttribute="trailing" id="Y1e-d8-Uoj"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="KlF-Pk-ee3" secondAttribute="leading" id="Yin-EP-ePr"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="KlF-Pk-ee3" secondAttribute="trailing" id="Zfr-xJ-7kd"/>
+                                            <constraint firstItem="rGB-Jt-Ykw" firstAttribute="leading" secondItem="Tke-gG-3fF" secondAttribute="leading" id="aGV-Ez-vXg"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="tRq-Xe-JAw" secondAttribute="leading" id="abL-CV-6vU"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="tRq-Xe-JAw" secondAttribute="trailing" id="bRZ-41-4gQ"/>
+                                            <constraint firstItem="7Wc-to-a4k" firstAttribute="top" secondItem="LWj-vD-rzn" secondAttribute="bottom" constant="8" symbolic="YES" id="bYt-Oo-dwK"/>
+                                            <constraint firstItem="tRq-Xe-JAw" firstAttribute="top" secondItem="KlF-Pk-ee3" secondAttribute="bottom" constant="8" id="clc-Ov-xTB"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="7Wc-to-a4k" secondAttribute="trailing" id="czg-23-SSk"/>
+                                            <constraint firstItem="MVk-vz-Ola" firstAttribute="top" secondItem="6U4-q9-eFy" secondAttribute="bottom" constant="8" symbolic="YES" id="f4v-kw-5tH"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="y7u-tx-6C2" secondAttribute="trailing" id="goC-PC-wpl"/>
                                             <constraint firstAttribute="height" constant="1500" id="hpT-iq-t4o"/>
+                                            <constraint firstItem="KlF-Pk-ee3" firstAttribute="top" secondItem="qkh-kr-x7R" secondAttribute="bottom" constant="8" symbolic="YES" id="ihr-84-EjE"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="top" secondItem="WnE-Ge-XHn" secondAttribute="bottom" constant="8" symbolic="YES" id="jcO-8I-7PC"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="6U4-q9-eFy" secondAttribute="leading" id="kRh-vs-rqR"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="pgf-dS-qlQ" secondAttribute="trailing" id="kTV-eS-LEX"/>
+                                            <constraint firstItem="5uL-WO-70a" firstAttribute="top" secondItem="7Wc-to-a4k" secondAttribute="bottom" constant="33" id="mO5-bL-LbG"/>
+                                            <constraint firstAttribute="trailing" secondItem="WnE-Ge-XHn" secondAttribute="trailing" constant="8" id="pKt-dO-4Gg"/>
+                                            <constraint firstItem="pgf-dS-qlQ" firstAttribute="top" secondItem="52F-jq-ESY" secondAttribute="bottom" constant="8" symbolic="YES" id="ptJ-Og-tIx"/>
+                                            <constraint firstItem="LWj-vD-rzn" firstAttribute="top" secondItem="tRq-Xe-JAw" secondAttribute="bottom" constant="8" symbolic="YES" id="q3k-od-V9p"/>
+                                            <constraint firstItem="52F-jq-ESY" firstAttribute="top" secondItem="Zu3-3K-iwm" secondAttribute="bottom" constant="8" symbolic="YES" id="ui4-o0-YJm"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="leading" secondItem="5uL-WO-70a" secondAttribute="leading" id="uyH-bs-F64"/>
+                                            <constraint firstItem="pgf-dS-qlQ" firstAttribute="top" secondItem="Tke-gG-3fF" secondAttribute="top" constant="344" id="vb3-57-VNd"/>
+                                            <constraint firstItem="ZWh-7N-I28" firstAttribute="trailing" secondItem="qkh-kr-x7R" secondAttribute="trailing" id="wcK-Ai-JUT"/>
+                                            <constraint firstItem="Zu3-3K-iwm" firstAttribute="top" secondItem="ZWh-7N-I28" secondAttribute="bottom" constant="6" id="xAm-CC-Sjp"/>
+                                            <constraint firstAttribute="bottom" secondItem="6U4-q9-eFy" secondAttribute="bottom" constant="304" id="xBJ-8I-1EV"/>
+                                            <constraint firstItem="pgf-dS-qlQ" firstAttribute="top" secondItem="52F-jq-ESY" secondAttribute="bottom" constant="8" id="z0A-sZ-AYT"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -773,7 +904,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmb-vd-m4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2009" y="-388"/>
+            <point key="canvasLocation" x="2008.6956521739132" y="-388.04347826086962"/>
         </scene>
         <!--Review My Goals View Controller-->
         <scene sceneID="qcW-O8-UXy">

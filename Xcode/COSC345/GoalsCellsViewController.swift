@@ -32,16 +32,13 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Gets user data as application loads
-        getData()
+        getData() //Gets user data as application loads
 
         //This gets the custom view cell from the .xib file
         tblList.register(UINib.init(nibName: "TableViewCellGoal", bundle: nil), forCellReuseIdentifier: "addGoals")
         tblList.dataSource = self
         tblList.delegate = self
         tblList.rowHeight = UITableViewAutomaticDimension
-        
-        //identifier CheckListIdentifier
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,7 +53,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblList.dequeueReusableCell(withIdentifier: "addGoals") as! TableViewCellGoal
         //changed to tblList from tableView
-        cell.lblTitle.text = listItemArray[indexPath.row]
+        cell.textLabel?.text = listItemArray[indexPath.row] // changes to textLabel from tblList, enabled ... at end of sentence. 
         cell.selectionStyle = .none
         cell.btnCheckMark.addTarget(self, action: #selector(checkMarkedButtonClicked(sender:)), for: .touchUpInside)
         cell.textLabel?.numberOfLines = 0
@@ -80,7 +77,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
             sender.isSelected = true
         }
     }
-    
+
 
     //myIndex is always the cell that the user taps on
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
