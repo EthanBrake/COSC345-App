@@ -27,7 +27,7 @@ import UIKit
         startButton.addGestureRecognizer(tapGestureRecogniser)
         
         stopTapGestureRecogniser.numberOfTapsRequired = 1
-        stopButton.addGestureRecognizer(stopTapGestureRecogniser)
+        //stopButton.addGestureRecognizer(stopTapGestureRecogniser)
 
         // Do any additional setup after loading the view.
     }
