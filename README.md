@@ -8,13 +8,13 @@ These include weblinks to various sites, a goal sysytem to encourage them to pra
 # Documentation
 Beta Report: https://docs.google.com/document/d/1dczWDyLyp4L_8sd4i9yD0-9SBHVMnIAXsk2WqaFZP74/edit?usp=sharing
 
-Surveys: https://docs.google.com/spreadsheets/d/16KJjGSys_ntRUO2xxB5ceBuOhfZwysds7_j4TTxCtuA/edit?usp=sharing
+Surveys: https://docs.google.com/spreadsheets/d/1o5PCZLELOj3gYn_M443seysMWmY1bNL3_veW7HII6Jc/edit?usp=sharing
 
-Notes: https://docs.google.com/document/d/1iPY2PJTLf4bqvEFbSZoct1ZgOqqkxtdP3_KxPWssUZo/edit?usp=sharing
-https://docs.google.com/document/d/118LZ-uFYpRPv0Ov_5PrEmzKS0z9daTL8LZfRi9YPtas/edit?usp=sharing
+Notes: https://docs.google.com/document/d/1NIlTEFDy-QXCjTaYAjsUWUyaoe3sI1UfgFlzC4nUWkw/edit?usp=sharing
+       https://docs.google.com/document/d/1EqMzUxFGotEEr8AYp6ffUQhqBAIAhrjQfymP9rrYTqE/edit?usp=sharing
 
-Alpha Report: https://docs.google.com/document/d/1ntb4nPTRoj4uxgDTx1s-V8ZPzvNU5dhYegC09OlnX8U/edit?usp=sharing
+Alpha Report: https://docs.google.com/document/d/1YzLlo8uDGOfD6sX8nCONgjCtptzgI0g3WgVfcQEtAbs/edit?usp=sharing
 
 Market Research Article: https://docs.google.com/document/d/1TOw2WJcXmniOOh5jDSCcU8oJClrmdFVdkcCNwxdfsIQ/edit?usp=sharing
 
-This app was developed for the University of Otago's COSC345 Software Development paper by Nathan Laing, Ethan Brake and Robert Giles.
+This app was developed for the University of Otago's COSC345 Software Development paper by Nathan Laing and Ethan Brake.
