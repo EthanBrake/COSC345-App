@@ -10,7 +10,7 @@ import UIKit
 var myrowIndex = 0
 var list: [String] = []
 
-class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     let listUserDefault = UserDefaults.standard
@@ -63,7 +63,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         myTableView.dataSource = self
         myTableView.rowHeight = UITableViewAutomaticDimension
 
-        self.title = "Second"
+        self.title = "Diary"
         // Do any additional setup after loading the view.
     }
 

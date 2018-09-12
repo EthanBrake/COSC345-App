@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class GoalsViewController: UIViewController {
 
     
     override func viewDidLoad() {

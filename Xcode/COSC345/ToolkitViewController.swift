@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objcMembers class ForthViewController: UIViewController, UITextFieldDelegate {
+@objcMembers class ToolkitViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var startButton: UIButton!
@@ -20,8 +20,8 @@ import UIKit
         self.title = "Breathing Exercise"
         
         avatarImageView.isUserInteractionEnabled = true
-        let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ForthViewController.addPulse))
-        let stopTapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ForthViewController.stopAnimation))
+        let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ToolkitViewController.addPulse))
+        let stopTapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ToolkitViewController.stopAnimation))
         
         tapGestureRecogniser.numberOfTapsRequired = 1
         startButton.addGestureRecognizer(tapGestureRecogniser)

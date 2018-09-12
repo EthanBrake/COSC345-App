@@ -8,7 +8,7 @@
 
 import UIKit
 
-class pulsing: CALayer {
+class Pulsing: CALayer {
     var animationGroup = CAAnimationGroup()
     // Settings for animation
     var initialPulseScale:Float = 0.2

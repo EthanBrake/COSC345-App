@@ -33,9 +33,9 @@
 		C88F2AA3206482120039194A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88F2AA1206482120039194A /* Main.storyboard */; };
 		C88F2AA5206482120039194A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88F2AA4206482120039194A /* Assets.xcassets */; };
 		C88F2AA8206482120039194A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88F2AA6206482120039194A /* LaunchScreen.storyboard */; };
-		C88F2AB22064826E0039194A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB12064826E0039194A /* SecondViewController.swift */; };
-		C88F2AB4206485E30039194A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB3206485E30039194A /* ThirdViewController.swift */; };
-		C88F2ABA206491B40039194A /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB9206491B40039194A /* FifthViewController.swift */; };
+		C88F2AB22064826E0039194A /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB12064826E0039194A /* DiaryViewController.swift */; };
+		C88F2AB4206485E30039194A /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB3206485E30039194A /* GoalsViewController.swift */; };
+		C88F2ABA206491B40039194A /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88F2AB9206491B40039194A /* InformationViewController.swift */; };
 		C8D119BF20B4A9370029739F /* WriteAGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D119BE20B4A9370029739F /* WriteAGoalViewController.swift */; };
 		C8D119C320B4AFAD0029739F /* WhatisAGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D119C220B4AFAD0029739F /* WhatisAGoalViewController.swift */; };
 		C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDBF8F20B4B19A0037C795 /* ReviewMyGoalsViewController.swift */; };
@@ -71,9 +71,9 @@
 		C88F2AA4206482120039194A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C88F2AA7206482120039194A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C88F2AA9206482120039194A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C88F2AB12064826E0039194A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		C88F2AB3206485E30039194A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		C88F2AB9206491B40039194A /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		C88F2AB12064826E0039194A /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		C88F2AB3206485E30039194A /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		C88F2AB9206491B40039194A /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		C8D119BE20B4A9370029739F /* WriteAGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteAGoalViewController.swift; sourceTree = "<group>"; };
 		C8D119C220B4AFAD0029739F /* WhatisAGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatisAGoalViewController.swift; sourceTree = "<group>"; };
 		C8FDBF8F20B4B19A0037C795 /* ReviewMyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMyGoalsViewController.swift; sourceTree = "<group>"; };
@@ -132,9 +132,9 @@
 				C88F2AA4206482120039194A /* Assets.xcassets */,
 				C88F2AA6206482120039194A /* LaunchScreen.storyboard */,
 				C88F2AA9206482120039194A /* Info.plist */,
-				C88F2AB12064826E0039194A /* SecondViewController.swift */,
-				C88F2AB3206485E30039194A /* ThirdViewController.swift */,
-				C88F2AB9206491B40039194A /* FifthViewController.swift */,
+				C88F2AB12064826E0039194A /* DiaryViewController.swift */,
+				C88F2AB3206485E30039194A /* GoalsViewController.swift */,
+				C88F2AB9206491B40039194A /* InformationViewController.swift */,
 				C830BF882092C33B00FFEAA9 /* SettingsController.swift */,
 				C8D119BE20B4A9370029739F /* WriteAGoalViewController.swift */,
 				C8D119C220B4AFAD0029739F /* WhatisAGoalViewController.swift */,
@@ -230,8 +230,8 @@
 				B457BB4D211E99BF00DC6CD0 /* FacebookViewController.swift in Sources */,
 				C830BF892092C33B00FFEAA9 /* SettingsController.swift in Sources */,
 				B457BB49211E91F000DC6CD0 /* ContactUsViewController.swift in Sources */,
-				C88F2ABA206491B40039194A /* FifthViewController.swift in Sources */,
-				C88F2AB22064826E0039194A /* SecondViewController.swift in Sources */,
+				C88F2ABA206491B40039194A /* InformationViewController.swift in Sources */,
+				C88F2AB22064826E0039194A /* DiaryViewController.swift in Sources */,
 				B4A396E120B1260B000CDC9F /* LivingWithInfoViewController.swift in Sources */,
 				B4A396DF20B125E3000CDC9F /* WhatIsInfoViewController.swift in Sources */,
 				B46CD9F121183ECF002C21D8 /* ToolkitViewController.swift in Sources */,
@@ -241,7 +241,7 @@
 				C8D119BF20B4A9370029739F /* WriteAGoalViewController.swift in Sources */,
 				B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */,
 				C88F2AA0206482110039194A /* ViewController.swift in Sources */,
-				C88F2AB4206485E30039194A /* ThirdViewController.swift in Sources */,
+				C88F2AB4206485E30039194A /* GoalsViewController.swift in Sources */,
 				1010499521200B7C009A2330 /* JournalViewController.swift in Sources */,
 				C8D119C320B4AFAD0029739F /* WhatisAGoalViewController.swift in Sources */,
 				C8FDBF9020B4B19A0037C795 /* ReviewMyGoalsViewController.swift in Sources */,

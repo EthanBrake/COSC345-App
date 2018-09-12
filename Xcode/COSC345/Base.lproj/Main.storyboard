@@ -199,7 +199,7 @@
         <!--Diary View-->
         <scene sceneID="7zZ-GQ-Jt1">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" title="Diary View" id="2X3-wV-VHU" customClass="SecondViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiaryViewController" title="Diary View" id="2X3-wV-VHU" customClass="DiaryViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUA-I6-dEM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,7 +272,7 @@
         <!--Goals View-->
         <scene sceneID="9U4-gP-OTj">
             <objects>
-                <viewController storyboardIdentifier="ThirdViewController" title="Goals View" id="rez-4Y-btk" customClass="ThirdViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalsViewController" title="Goals View" id="rez-4Y-btk" customClass="GoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZyF-1s-kK7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -574,7 +574,7 @@
         <!--Breathing Exercise-->
         <scene sceneID="Y3t-56-gq3">
             <objects>
-                <viewController storyboardIdentifier="ForthViewController" title="Breathing Exercise" id="VtF-6O-fXz" customClass="ForthViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ToolkitViewController" title="Breathing Exercise" id="VtF-6O-fXz" customClass="ToolkitViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xOP-6Z-GDP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1064,7 +1064,7 @@
         <!--Information View-->
         <scene sceneID="jHE-IF-xhi">
             <objects>
-                <viewController storyboardIdentifier="FifthViewController" title="Information View" id="N2w-7K-cDa" customClass="FifthViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationViewController" title="Information View" id="N2w-7K-cDa" customClass="InformationViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ldb-19-vJ5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

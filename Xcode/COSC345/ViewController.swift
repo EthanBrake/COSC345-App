@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         // Creates a constant variable using storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         // SecondViewController constant variable for nav
-        let secondVC = storyboard.instantiateViewController(withIdentifier: "SecondViewController")as!
-            SecondViewController
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "DiaryViewController")as!
+            DiaryViewController
         //This pushes the VC by using Nav controller
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
@@ -40,8 +40,8 @@ class ViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let thirdVC = storyboard.instantiateViewController(withIdentifier: "ThirdViewController")as!
-            ThirdViewController
+        let thirdVC = storyboard.instantiateViewController(withIdentifier: "GoalsViewController")as!
+            GoalsViewController
         
         self.navigationController?.pushViewController(thirdVC, animated: true)
         
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     @IBAction func clickForthVC(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let forthVC = storyboard.instantiateViewController(withIdentifier: "ForthViewController")as!ForthViewController
+        let forthVC = storyboard.instantiateViewController(withIdentifier: "ToolkitViewController")as!ToolkitViewController
         
         self.navigationController?.pushViewController(forthVC, animated: true)
     }
@@ -58,8 +58,7 @@ class ViewController: UIViewController {
     @IBAction func clickFifthVC(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let fifthVC = storyboard.instantiateViewController(withIdentifier: "FifthViewController")as!
-        FifthViewController
+        let fifthVC = storyboard.instantiateViewController(withIdentifier: "InformationViewController")as!InformationViewController
         
         self.navigationController?.pushViewController(fifthVC, animated: true)
     }
