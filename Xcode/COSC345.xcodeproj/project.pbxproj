@@ -22,6 +22,7 @@
 		C80DEFAF2117BAEA00E2604F /* TableViewCellGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */; };
 		C80DEFB02117BAEA00E2604F /* TableViewCellGoal.xib in Resources */ = {isa = PBXBuildFile; fileRef = C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */; };
 		C80DEFB22117BBA900E2604F /* GoalsCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */; };
+		C827DF1921531F660061DA0C /* COSC345Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827DF1821531F660061DA0C /* COSC345Tests.swift */; };
 		C82D0920210FD4E000B5A4B3 /* UnChecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */; };
 		C82D0921210FD4E000B5A4B3 /* Checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091D210FD4DD00B5A4B3 /* Checked@2x.png */; };
 		C82D0922210FD4E000B5A4B3 /* UnChecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */; };
@@ -42,6 +43,16 @@
 		C8FDBF9420B4B93B0037C795 /* CurrentGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDBF9320B4B93B0037C795 /* CurrentGoalsViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C827DF1B21531F660061DA0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C88F2A92206482110039194A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88F2A99206482110039194A;
+			remoteInfo = COSC345;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1010499421200B7C009A2330 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		B457BB48211E91F000DC6CD0 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +69,9 @@
 		C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGoal.swift; sourceTree = "<group>"; };
 		C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellGoal.xib; sourceTree = "<group>"; };
 		C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsCellsViewController.swift; sourceTree = "<group>"; };
+		C827DF1621531F660061DA0C /* COSC345Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COSC345Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C827DF1821531F660061DA0C /* COSC345Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345Tests.swift; sourceTree = "<group>"; };
+		C827DF1A21531F660061DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C82D091C210FD4DC00B5A4B3 /* UnChecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnChecked@2x.png"; sourceTree = "<group>"; };
 		C82D091D210FD4DD00B5A4B3 /* Checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked@2x.png"; sourceTree = "<group>"; };
 		C82D091E210FD4DE00B5A4B3 /* UnChecked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnChecked@3x.png"; sourceTree = "<group>"; };
@@ -81,6 +95,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C827DF1321531F660061DA0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C88F2A97206482110039194A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,10 +112,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C827DF1721531F660061DA0C /* COSC345Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C827DF1821531F660061DA0C /* COSC345Tests.swift */,
+				C827DF1A21531F660061DA0C /* Info.plist */,
+			);
+			path = COSC345Tests;
+			sourceTree = "<group>";
+		};
 		C88F2A91206482110039194A = {
 			isa = PBXGroup;
 			children = (
 				C88F2A9C206482110039194A /* COSC345 */,
+				C827DF1721531F660061DA0C /* COSC345Tests */,
 				C88F2A9B206482110039194A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				C88F2A9A206482110039194A /* COSC345.app */,
+				C827DF1621531F660061DA0C /* COSC345Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +183,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C827DF1521531F660061DA0C /* COSC345Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C827DF1F21531F660061DA0C /* Build configuration list for PBXNativeTarget "COSC345Tests" */;
+			buildPhases = (
+				C827DF1221531F660061DA0C /* Sources */,
+				C827DF1321531F660061DA0C /* Frameworks */,
+				C827DF1421531F660061DA0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C827DF1C21531F660061DA0C /* PBXTargetDependency */,
+			);
+			name = COSC345Tests;
+			productName = COSC345Tests;
+			productReference = C827DF1621531F660061DA0C /* COSC345Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C88F2A99206482110039194A /* COSC345 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C88F2AAC206482120039194A /* Build configuration list for PBXNativeTarget "COSC345" */;
@@ -174,10 +224,15 @@
 		C88F2A92206482110039194A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Ethan Brake";
 				TargetAttributes = {
+					C827DF1521531F660061DA0C = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C88F2A99206482110039194A;
+					};
 					C88F2A99206482110039194A = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -198,11 +253,19 @@
 			projectRoot = "";
 			targets = (
 				C88F2A99206482110039194A /* COSC345 */,
+				C827DF1521531F660061DA0C /* COSC345Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C827DF1421531F660061DA0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C88F2A98206482110039194A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +285,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C827DF1221531F660061DA0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C827DF1921531F660061DA0C /* COSC345Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C88F2A96206482110039194A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +326,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C827DF1C21531F660061DA0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C88F2A99206482110039194A /* COSC345 */;
+			targetProxy = C827DF1B21531F660061DA0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C88F2AA1206482120039194A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -275,6 +354,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C827DF1D21531F660061DA0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78DPXVPLCN;
+				INFOPLIST_FILE = COSC345Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebrake.COSC345Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COSC345.app/COSC345";
+			};
+			name = Debug;
+		};
+		C827DF1E21531F660061DA0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78DPXVPLCN;
+				INFOPLIST_FILE = COSC345Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ebrake.COSC345Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COSC345.app/COSC345";
+			};
+			name = Release;
+		};
 		C88F2AAA206482120039194A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +534,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C827DF1F21531F660061DA0C /* Build configuration list for PBXNativeTarget "COSC345Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C827DF1D21531F660061DA0C /* Debug */,
+				C827DF1E21531F660061DA0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C88F2A95206482110039194A /* Build configuration list for PBXProject "COSC345" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
