@@ -55,25 +55,17 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if let list = listUserDefault.stringArray(forKey: "best"){
-//            list = list
-//        }
-
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.rowHeight = UITableViewAutomaticDimension
 
         self.title = "Diary"
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    //myIndex is always the cell that the user taps on
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         myrowIndex = indexPath.row
         performSegue(withIdentifier: "JournalConnect", sender: self)

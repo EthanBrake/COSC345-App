@@ -15,30 +15,20 @@ class SettingsController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBAction func importimage(_ sender: Any)
     {
         let userimage = UIImagePickerController()
-        
         userimage.delegate = self
-        
         userimage.sourceType = UIImagePickerControllerSourceType.photoLibrary
-        
         userimage.allowsEditing = false
         
-        self.present(userimage, animated: true)
-        {
-            
-        }
+        self.present(userimage, animated: true){}
     }
     
     @IBOutlet weak var inputButton: UIButton!
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
-    {
-        if let userimage = info[UIImagePickerControllerOriginalImage] as? UIImage
-        {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        if let userimage = info[UIImagePickerControllerOriginalImage] as? UIImage{
             backgroundView.image = userimage
              self.inputButton.isHidden = true
-        }
-        else
-        {
+        }else{
             // Error Message
         }
         self.dismiss(animated: true, completion: nil)
@@ -55,24 +45,10 @@ class SettingsController: UIViewController, UINavigationControllerDelegate, UIIm
         if let image = imageThatIgetFromSomewhere {
             backgroundView.image = image
         }
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

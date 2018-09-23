@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import COSC345
 
 class COSC345Tests: XCTestCase {
     

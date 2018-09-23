@@ -13,7 +13,6 @@ let defaultss = UserDefaults(suiteName: "345App")
 var listItemArray: [String] = Array()
 var myIndex = 0
 
-
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
@@ -25,6 +24,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         getData()
         
     }
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
         storeData()
@@ -43,7 +43,6 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //Tells the data source to return the number of rows in a given section of a table view.
@@ -93,32 +92,30 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
-    
     //This button called my alert
     @IBAction func newGoalPressed(_ sender: Any) {
         addTableRow()
     }
-        //Alert func which allows the user to input a goal
+    
+    //Alert func which allows the user to input a goal
     func addTableRow(){
         //This creates a UI alert
         let alert = UIAlertController(title: "My Goal:", message: "Create your goal:", preferredStyle: .alert)
+        
         //Adds a text field to the alert
-        alert.addTextField{(textField) in
-            textField.placeholder = "Enter goal here"
-        }
+        alert.addTextField{(textField) in textField.placeholder = "Enter goal here"}
+        
         //Adds a confirm button
         alert.addAction(UIAlertAction(title: "Confirm Goal", style: .default, handler: {[weak alert](_) in
             let text = alert?.textFields![0]
             listItemArray.append((text?.text)!)
             self.tblList.rowHeight = UITableViewAutomaticDimension
             self.tblList.reloadData()
-            
-            
         }))
+        
         //Present alert
         self.present(alert, animated: true, completion: nil)
         storeData()
-        
     }
     
     //storing app data
@@ -128,24 +125,13 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         defaultss?.synchronize()
     }
     
-    
     //getting app data
     func getData(){
         let data = defaultss?.value(forKey: "savedData")
         if data != nil {
             listItemArray = data as! [String]
         } else{
-            
+            //Else what?
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
