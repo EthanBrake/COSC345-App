@@ -1,5 +1,5 @@
 //
-//  ForthViewController.swift
+//  ToolkitViewController.swift
 //  COSC345
 //
 //  Created by Ethan Brake on 3/27/18.
@@ -27,8 +27,6 @@ import UIKit
         startButton.addGestureRecognizer(tapGestureRecogniser)
         
         stopTapGestureRecogniser.numberOfTapsRequired = 1
-        //stopButton.addGestureRecognizer(stopTapGestureRecogniser)
-
         // Do any additional setup after loading the view.
     }
     
