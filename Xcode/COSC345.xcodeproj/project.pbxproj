@@ -76,7 +76,6 @@
 		C88F2AA2206482120039194A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C88F2AA4206482120039194A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C88F2AA7206482120039194A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C88F2AA9206482120039194A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C88F2AB12064826E0039194A /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		C88F2AB3206485E30039194A /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		C88F2AB9206491B40039194A /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +151,6 @@
 			children = (
 				C88F2A9D206482110039194A /* AppDelegate.swift */,
 				C88F2A9F206482110039194A /* HomeViewController.swift */,
-				C88F2AA9206482120039194A /* Info.plist */,
 				C88F2AA4206482120039194A /* Assets.xcassets */,
 				C88F2AA6206482120039194A /* LaunchScreen.storyboard */,
 				C88F2AA1206482120039194A /* Main.storyboard */,

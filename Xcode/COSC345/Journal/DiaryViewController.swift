@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  DiaryViewController.swift
 //  COSC345
 //
 //  Created by Ethan Brake on 3/23/18.

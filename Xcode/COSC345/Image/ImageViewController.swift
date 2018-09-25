@@ -1,5 +1,5 @@
 //
-//  HelpViewController.swift
+//  ImageViewController.swift
 //  COSC345
 //
 //  Created by Ethan Brake on 4/27/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class ImageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var myImageView: UIImageView!
     

@@ -42,7 +42,7 @@
                                                             <segue destination="2X3-wV-VHU" kind="show" id="c4I-hg-2rI"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A3-g3-7PX">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A3-g3-7PX">
                                                         <rect key="frame" x="25" y="100" width="50" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,7 +64,7 @@
                                                             <segue destination="rez-4Y-btk" kind="show" id="cFJ-hq-czS"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r6-Ro-6fg">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r6-Ro-6fg">
                                                         <rect key="frame" x="23.000000000000028" y="100" width="54" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,7 +91,7 @@
                                                             <segue destination="N2w-7K-cDa" kind="show" id="TC6-fo-5lg"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbP-hy-NGu">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbP-hy-NGu">
                                                         <rect key="frame" x="0.0" y="100" width="109.66666666666667" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,7 +113,7 @@
                                                             <segue destination="VtF-6O-fXz" kind="show" id="33t-Tj-9XH"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathing Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-ZC-IsO">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathing Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-ZC-IsO">
                                                         <rect key="frame" x="0.0" y="100" width="176.33333333333334" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,7 +140,7 @@
                                                             <segue destination="Gfx-ZB-hC7" kind="show" id="QV3-Rj-OVf"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UE-sF-oET">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UE-sF-oET">
                                                         <rect key="frame" x="0.0" y="100" width="105.33333333333333" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,7 +162,7 @@
                                                             <segue destination="WZn-D5-XNr" kind="show" id="3C9-OF-i5i"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relaxing Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR6-c4-9Pg">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relaxing Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR6-c4-9Pg">
                                                         <rect key="frame" x="0.0" y="100" width="144" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="590" y="-660"/>
         </scene>
-        <!--Diary View-->
+        <!--Diary-->
         <scene sceneID="7zZ-GQ-Jt1">
             <objects>
-                <viewController storyboardIdentifier="DiaryViewController" title="Diary View" id="2X3-wV-VHU" customClass="DiaryViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiaryViewController" title="Diary" id="2X3-wV-VHU" customClass="DiaryViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUA-I6-dEM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,15 +234,15 @@
                                 <rect key="frame" x="0.0" y="64" width="415" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="New Entry">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Add Entry">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="additem:" destination="2X3-wV-VHU" eventType="touchUpInside" id="Iqt-2H-5ZS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgW-ng-MMd">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a diary entry here:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgW-ng-MMd">
                                 <rect key="frame" x="24" y="115" width="367" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="-204.34782608695653" y="-1286.413043478261"/>
         </scene>
-        <!--Goals View-->
+        <!--Goals Home-->
         <scene sceneID="9U4-gP-OTj">
             <objects>
-                <viewController storyboardIdentifier="GoalsViewController" title="Goals View" id="rez-4Y-btk" customClass="GoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalsViewController" title="Goals Home" id="rez-4Y-btk" customClass="GoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZyF-1s-kK7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="1355.072463768116" y="-1287.2282608695652"/>
         </scene>
-        <!--Goals Cells View Controller-->
+        <!--Goals-->
         <scene sceneID="xCe-qz-89c">
             <objects>
-                <viewController storyboardIdentifier="GoalsCellsViewController" id="RoC-i0-Kd6" customClass="GoalsCellsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalsCellsViewController" title="Goals" id="RoC-i0-Kd6" customClass="GoalsCellsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N2o-YU-aKk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,10 +388,10 @@
             </objects>
             <point key="canvasLocation" x="1522" y="-2123"/>
         </scene>
-        <!--View Goals View Controller-->
+        <!--Goals-->
         <scene sceneID="hJI-eX-LSs">
             <objects>
-                <viewController storyboardIdentifier="ViewGoalsViewController" id="8Ce-ZA-IWB" customClass="ViewGoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewGoalsViewController" title="Goals" id="8Ce-ZA-IWB" customClass="ViewGoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ka-vB-RaP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,14 +411,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Stay Focused! You can do it." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lB4-Nq-uPh">
-                                <rect key="frame" x="20" y="641" width="374" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stay Focused! You can do it." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlU-VR-iUE">
+                                <rect key="frame" x="20" y="662" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.57274721750000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -436,12 +436,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3be-k5-DWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="-2041"/>
+            <point key="canvasLocation" x="2269.5652173913045" y="-2041.3043478260872"/>
         </scene>
-        <!--Item-->
+        <!--Goals Information-->
         <scene sceneID="ruq-dT-RoL">
             <objects>
-                <viewController storyboardIdentifier="CurrentGoalsViewController" id="tME-c4-db3" customClass="CurrentGoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrentGoalsViewController" title="Goals Information" id="tME-c4-db3" customClass="CurrentGoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8XT-Gl-HnP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -626,10 +626,10 @@
             </objects>
             <point key="canvasLocation" x="1355.072463768116" y="-611.41304347826087"/>
         </scene>
-        <!--WhatisA Goal View Controller-->
+        <!--Goals Information-->
         <scene sceneID="QB8-Ai-UJN">
             <objects>
-                <viewController storyboardIdentifier="WhatisAGoalViewController" id="hea-bx-u1u" customClass="WhatisAGoalViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhatisAGoalViewController" title="Goals Information" id="hea-bx-u1u" customClass="WhatisAGoalViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Vb-kX-tX4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -643,7 +643,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rGB-Jt-Ykw">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                             </imageView>
-                                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52F-jq-ESY">
+                                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52F-jq-ESY">
                                                 <rect key="frame" x="8" y="220" width="398" height="116"/>
                                                 <color key="backgroundColor" white="1" alpha="0.75438784246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -676,7 +676,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-7N-I28">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-7N-I28">
                                                 <rect key="frame" x="8" y="61" width="398" height="100"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -694,7 +694,7 @@
                                                 </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" keyboardDismissMode="interactive" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-hd-TgX">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" keyboardDismissMode="interactive" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-hd-TgX">
                                                 <rect key="frame" x="8" y="397" width="398" height="166"/>
                                                 <color key="backgroundColor" white="1" alpha="0.74957191776438359" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <attributedString key="attributedText">
@@ -759,14 +759,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KlF-Pk-ee3">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KlF-Pk-ee3">
                                                 <rect key="frame" x="8" y="624" width="398" height="84"/>
                                                 <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Make sure your goal is clear and well defined. If it's too generalized then it won't provide direction. Goals show you the way, specificly aim where you want to go by defining where you want to end up. E.g. I will go for a walk.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LWj-vD-rzn">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LWj-vD-rzn">
                                                 <rect key="frame" x="8" y="769" width="398" height="84"/>
                                                 <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -776,21 +776,21 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5uL-WO-70a">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5uL-WO-70a">
                                                 <rect key="frame" x="8" y="914" width="398" height="84"/>
                                                 <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Make sure your goal is achieveable, if you set a goal that you cannot achieve, you will only demoralize yourself and erode your confidence. E.g. I will go for a walk to the park today at 3pm.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y7u-tx-6C2">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y7u-tx-6C2">
                                                 <rect key="frame" x="8" y="1059" width="398" height="84"/>
                                                 <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Your goal should be relevant to the direction you want your life and career to take. Try keep your goals aligned with this. It will help you develop focus and determination to keep moving forward. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVk-vz-Ola">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVk-vz-Ola">
                                                 <rect key="frame" x="8" y="1204" width="398" height="64"/>
                                                 <color key="backgroundColor" white="1" alpha="0.74957191779999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -1061,10 +1061,10 @@
             </objects>
             <point key="canvasLocation" x="-920.28985507246387" y="103.53260869565219"/>
         </scene>
-        <!--Information View-->
+        <!--Information Webpages-->
         <scene sceneID="jHE-IF-xhi">
             <objects>
-                <viewController storyboardIdentifier="InformationViewController" title="Information View" id="N2w-7K-cDa" customClass="InformationViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationViewController" title="Information Webpages" id="N2w-7K-cDa" customClass="InformationViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ldb-19-vJ5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1181,10 +1181,10 @@
             </objects>
             <point key="canvasLocation" x="-204.34782608695653" y="-611.41304347826087"/>
         </scene>
-        <!--Contact Us View-->
+        <!--Contact Us-->
         <scene sceneID="z6K-Yg-yRt">
             <objects>
-                <viewController title="Contact Us View" id="Gfx-ZB-hC7" customClass="ContactUsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Contact Us" id="Gfx-ZB-hC7" customClass="ContactUsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bA3-7K-3hW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1290,10 +1290,10 @@
             </objects>
             <point key="canvasLocation" x="706" y="858"/>
         </scene>
-        <!--Settings View-->
+        <!--Relaxing Image-->
         <scene sceneID="NOr-TC-nLu">
             <objects>
-                <viewController storyboardIdentifier="HelpViewController" title="Settings View" id="WZn-D5-XNr" customClass="SettingsController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" title="Relaxing Image" id="WZn-D5-XNr" customClass="ImageViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pVf-MZ-CCL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1337,10 +1337,10 @@
             </objects>
             <point key="canvasLocation" x="998.55072463768124" y="104.34782608695653"/>
         </scene>
-        <!--Journal View Controller-->
+        <!--Diary Entry-->
         <scene sceneID="oB4-kY-X7s">
             <objects>
-                <viewController id="p41-xc-8Ql" customClass="JournalViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Diary Entry" id="p41-xc-8Ql" customClass="JournalViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F19-kT-0v4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
