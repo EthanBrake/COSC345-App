@@ -326,7 +326,6 @@
                         <viewLayoutGuide key="safeArea" id="ClR-Zl-gwf"/>
                     </view>
                     <connections>
-                        <segue destination="tME-c4-db3" kind="show" identifier="segue" id="AHr-R0-JQz"/>
                         <segue destination="RoC-i0-Kd6" kind="show" identifier="toTableViewGoalSegue" id="Fop-cL-x81"/>
                     </connections>
                 </viewController>
@@ -415,6 +414,9 @@
                                 <rect key="frame" x="20" y="662" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -437,139 +439,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3be-k5-DWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2269.5652173913045" y="-2041.3043478260872"/>
-        </scene>
-        <!--Goals Information-->
-        <scene sceneID="ruq-dT-RoL">
-            <objects>
-                <viewController storyboardIdentifier="CurrentGoalsViewController" title="Goals Information" id="tME-c4-db3" customClass="CurrentGoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8XT-Gl-HnP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-FL-iRd">
-                                <rect key="frame" x="0.0" y="191" width="414" height="475"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rows" id="uti-76-KRa">
-                                        <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uti-76-KRa" id="v1R-Ne-XZl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="tME-c4-db3" id="Tq4-XL-qVz"/>
-                                    <outlet property="delegate" destination="tME-c4-db3" id="ppb-L3-yGb"/>
-                                </connections>
-                            </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7h-MI-QaK">
-                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="a9C-A0-gmW">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="bVm-4a-Fyd">
-                                            <connections>
-                                                <action selector="newRowPressed:" destination="tME-c4-db3" id="EJJ-Gf-owI"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Kgh-FL-iRd" firstAttribute="top" secondItem="o4D-fq-Emw" secondAttribute="top" constant="127" id="9n6-sA-Hb3"/>
-                            <constraint firstItem="Kgh-FL-iRd" firstAttribute="bottom" secondItem="o4D-fq-Emw" secondAttribute="bottom" constant="-26" id="BGK-JH-OdZ"/>
-                            <constraint firstItem="Kgh-FL-iRd" firstAttribute="leading" secondItem="o4D-fq-Emw" secondAttribute="leading" id="LrJ-WW-Uda"/>
-                            <constraint firstItem="Kgh-FL-iRd" firstAttribute="trailing" secondItem="o4D-fq-Emw" secondAttribute="trailing" id="TcW-HZ-A7M"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="o4D-fq-Emw"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="E5R-pB-RlR"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="u6i-zK-bxr"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="addRowButton" destination="bVm-4a-Fyd" id="Xsi-pH-Ldu"/>
-                        <outlet property="tableView" destination="Kgh-FL-iRd" id="Eg9-YJ-fxu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yrE-5Q-yDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2496" y="-1389"/>
-        </scene>
-        <!--WriteA Goal View Controller-->
-        <scene sceneID="Pvh-Fv-hYt">
-            <objects>
-                <viewController storyboardIdentifier="WriteAGoalViewController" id="eb9-cj-yzK" customClass="WriteAGoalViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OWV-iJ-7jn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add your Goal here." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obm-oN-Gig">
-                                <rect key="frame" x="114" y="149" width="217" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3h-7K-lvN">
-                                <rect key="frame" x="126" y="271" width="192" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Add Goal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="addGoal:" destination="eb9-cj-yzK" eventType="touchUpInside" id="otC-Gp-JfK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ij-dc-5pX">
-                                <rect key="frame" x="20" y="410" width="374" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Write a Goal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="writeAGoalVC:" destination="rez-4Y-btk" eventType="touchUpInside" id="I4Q-Vc-7nV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LS-7z-phn">
-                                <rect key="frame" x="35" y="576" width="374" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="My Goals">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="CurrentGoalsVC:" destination="rez-4Y-btk" eventType="touchUpInside" id="NY8-lG-XUE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVY-wa-lAm">
-                                <rect key="frame" x="0.0" y="1" width="374" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Review my Previous Goals">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="toReviewVC:" destination="rez-4Y-btk" eventType="touchUpInside" id="Lb4-dZ-FsH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ri9-hx-hhO"/>
-                    </view>
-                    <connections>
-                        <outlet property="input" destination="Obm-oN-Gig" id="zqg-fb-8uW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="54I-Xs-XiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3204" y="-1389"/>
         </scene>
         <!--Breathing Exercise-->
         <scene sceneID="Y3t-56-gq3">
@@ -876,30 +745,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmb-vd-m4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2008.6956521739132" y="-388.04347826086962"/>
-        </scene>
-        <!--Review My Goals View Controller-->
-        <scene sceneID="qcW-O8-UXy">
-            <objects>
-                <viewController storyboardIdentifier="ReviewMyGoalsViewController" id="qM6-b8-wSJ" customClass="ReviewMyGoalsViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="v7r-gt-77I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This VC will have your previous goals that you've completed you will be able to review your progress." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L3J-Pc-LA4">
-                                <rect key="frame" x="118" y="473" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Q3g-9w-AkJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ciX-iB-Xf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2991" y="-660"/>
         </scene>
         <!--What is Social Anxiety Disorder? (SAD)-->
         <scene sceneID="x2D-sG-gXW">
