@@ -12,7 +12,7 @@
 		B457BB4B211E999C00DC6CD0 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB4A211E999C00DC6CD0 /* GithubViewController.swift */; };
 		B457BB4D211E99BF00DC6CD0 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457BB4C211E99BF00DC6CD0 /* FacebookViewController.swift */; };
 		B46CD9ED21183D6B002C21D8 /* pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CD9EC21183D6B002C21D8 /* pulsing.swift */; };
-		B46CD9F121183ECF002C21D8 /* ToolkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CD9F021183ECF002C21D8 /* ToolkitViewController.swift */; };
+		B46CD9F121183ECF002C21D8 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CD9F021183ECF002C21D8 /* BreathingViewController.swift */; };
 		B4A396DF20B125E3000CDC9F /* WhatIsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */; };
 		B4A396E120B1260B000CDC9F /* LivingWithInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */; };
 		B4A396E320B12628000CDC9F /* PlacesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */; };
@@ -55,7 +55,7 @@
 		B457BB4A211E999C00DC6CD0 /* GithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubViewController.swift; sourceTree = "<group>"; };
 		B457BB4C211E99BF00DC6CD0 /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		B46CD9EC21183D6B002C21D8 /* pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pulsing.swift; sourceTree = "<group>"; };
-		B46CD9F021183ECF002C21D8 /* ToolkitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolkitViewController.swift; sourceTree = "<group>"; };
+		B46CD9F021183ECF002C21D8 /* BreathingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
 		B4A396DE20B125E3000CDC9F /* WhatIsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsInfoViewController.swift; sourceTree = "<group>"; };
 		B4A396E020B1260B000CDC9F /* LivingWithInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingWithInfoViewController.swift; sourceTree = "<group>"; };
 		B4A396E220B12628000CDC9F /* PlacesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesInfoViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		B4E4BFB72159B9CE003B9B57 /* Breathing */ = {
 			isa = PBXGroup;
 			children = (
-				B46CD9F021183ECF002C21D8 /* ToolkitViewController.swift */,
+				B46CD9F021183ECF002C21D8 /* BreathingViewController.swift */,
 				B46CD9EC21183D6B002C21D8 /* pulsing.swift */,
 			);
 			path = Breathing;
@@ -335,7 +335,7 @@
 				C88F2AB22064826E0039194A /* DiaryViewController.swift in Sources */,
 				B4A396E120B1260B000CDC9F /* LivingWithInfoViewController.swift in Sources */,
 				B4A396DF20B125E3000CDC9F /* WhatIsInfoViewController.swift in Sources */,
-				B46CD9F121183ECF002C21D8 /* ToolkitViewController.swift in Sources */,
+				B46CD9F121183ECF002C21D8 /* BreathingViewController.swift in Sources */,
 				C8FDBF9420B4B93B0037C795 /* CurrentGoalsViewController.swift in Sources */,
 				B457BB4B211E999C00DC6CD0 /* GithubViewController.swift in Sources */,
 				C836EA8B2119008800A00EBF /* ViewGoalsViewController.swift in Sources */,

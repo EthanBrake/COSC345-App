@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  COSC345
 //
 //  Created by Ethan Brake on 3/23/18.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,25 +18,25 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func clickSecondVC(_ sender: AnyObject) {
+    @IBAction func clickDiaryVC(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(withIdentifier: "DiaryViewController")as!DiaryViewController
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
-    @IBAction func clickThirdVC(_ sender: AnyObject) {
+    @IBAction func clickGoalsVC(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let thirdVC = storyboard.instantiateViewController(withIdentifier: "GoalsViewController")as!GoalsViewController
         self.navigationController?.pushViewController(thirdVC, animated: true)
     }
     
-    @IBAction func clickForthVC(_ sender: Any) {
+    @IBAction func clickBreathingVC(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let forthVC = storyboard.instantiateViewController(withIdentifier: "ToolkitViewController")as!ToolkitViewController
+        let forthVC = storyboard.instantiateViewController(withIdentifier: "BreathingViewController")as!BreathingViewController
         self.navigationController?.pushViewController(forthVC, animated: true)
     }
     
-    @IBAction func clickFifthVC(_ sender: AnyObject) {
+    @IBAction func clickInformationVC(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let fifthVC = storyboard.instantiateViewController(withIdentifier: "InformationViewController")as!InformationViewController
         self.navigationController?.pushViewController(fifthVC, animated: true)

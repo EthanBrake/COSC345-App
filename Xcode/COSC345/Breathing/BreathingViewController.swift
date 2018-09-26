@@ -1,5 +1,5 @@
 //
-//  ToolkitViewController.swift
+//  BreathingViewController.swift
 //  COSC345
 //
 //  Created by Ethan Brake on 3/27/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objcMembers class ToolkitViewController: UIViewController, UITextFieldDelegate {
+@objcMembers class BreathingViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var startButton: UIButton!
@@ -20,8 +20,8 @@ import UIKit
         self.title = "Breathing Exercise"
         
         avatarImageView.isUserInteractionEnabled = true
-        let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ToolkitViewController.addPulse))
-        let stopTapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(ToolkitViewController.stopAnimation))
+        let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(BreathingViewController.addPulse))
+        let stopTapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(BreathingViewController.stopAnimation))
         
         tapGestureRecogniser.numberOfTapsRequired = 1
         startButton.addGestureRecognizer(tapGestureRecogniser)
