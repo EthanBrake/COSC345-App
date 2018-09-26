@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(thirdVC, animated: true)
     }
     
-    @IBAction func clickBreathingVC(_ sender: Any) {
+    @IBAction func clickBreathingVC(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let forthVC = storyboard.instantiateViewController(withIdentifier: "BreathingViewController")as!BreathingViewController
         self.navigationController?.pushViewController(forthVC, animated: true)

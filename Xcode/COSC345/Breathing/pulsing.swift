@@ -12,9 +12,9 @@ class pulsing: CALayer {
     var animationGroup = CAAnimationGroup()
     // Settings for animation
     var initialPulseScale:Float = 0.2
-    var nextPulseAfter:TimeInterval = 0
-    var animationDuration:TimeInterval = 4
-    var radius:CGFloat = 200
+    var nextPulseAfter:TimeInterval = 0.25
+    var animationDuration:TimeInterval = 3.75
+    var radius:CGFloat = 160
     var numberOfPulses:Float = Float.infinity
     
     //Initialisers
