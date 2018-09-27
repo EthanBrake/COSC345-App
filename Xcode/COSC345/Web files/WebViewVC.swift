@@ -1,22 +1,30 @@
 //
-//  PlacesInfoViewController.swift
+//  WebViewVC.swift
 //  COSC345
 //
-//  Created by Nathan Laing on 5/20/18.
+// This is going to be the overarching class for all the webpages.
+//
+//  Created by Nathan Laing on 9/25/18.
 //  Copyright © 2018 Ethan Brake. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import WebKit
 
-class PlacesInfoViewController: UIViewController {
-
+class WebViewVC: UIViewController {
+    static var myURL = "https://www.google.com"
+    
     @IBOutlet weak var webview: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        let myURL = URL(string: WebViewVC.myURL)!
+        let request = URLRequest(url: myURL)
+        webview.load(request)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -24,9 +32,6 @@ class PlacesInfoViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let url = URL(string: "https://1737.org.nz/?gclid=Cj0KCQjwlv_XBRDrARIsAH-iRJTOK16cGPpTAjuFc5RM4D2ZAaaFCn7X86F47Z6d5cByVzpr1iHGO-4aAkYgEALw_wcB")!
-        let request = URLRequest(url: url)
-        webview.load(request)
+
     }
 }

@@ -217,7 +217,7 @@
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="mxu-hU-357">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="mxu-hU-357">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mxu-hU-357" id="SDW-60-Jg4">
@@ -269,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kht-he-Ux0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204.34782608695653" y="-1286.413043478261"/>
+            <point key="canvasLocation" x="-204" y="-1288"/>
         </scene>
         <!--Goals Home-->
         <scene sceneID="9U4-gP-OTj">
@@ -386,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1R-br-Xzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1522" y="-2123"/>
+            <point key="canvasLocation" x="1355" y="-1980"/>
         </scene>
         <!--Goals-->
         <scene sceneID="hJI-eX-LSs">
@@ -439,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3be-k5-DWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269.5652173913045" y="-2041.3043478260872"/>
+            <point key="canvasLocation" x="2212" y="-1980"/>
         </scene>
         <!--Breathing Exercise-->
         <scene sceneID="Y3t-56-gq3">
@@ -479,7 +479,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKh-O7-HIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1355.072463768116" y="-611.41304347826087"/>
+            <point key="canvasLocation" x="1512" y="-596"/>
         </scene>
         <!--Goals Information-->
         <scene sceneID="QB8-Ai-UJN">
@@ -745,152 +745,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmb-vd-m4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008.6956521739132" y="-388.04347826086962"/>
-        </scene>
-        <!--What is Social Anxiety Disorder? (SAD)-->
-        <scene sceneID="x2D-sG-gXW">
-            <objects>
-                <viewController title="What is Social Anxiety Disorder? (SAD)" id="70g-L5-3rL" customClass="WhatIsInfoViewController" customModule="COSC345" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xvq-U2-cC5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ee5-VT-N0x">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="e1c-As-GcK"/>
-                    </view>
-                    <connections>
-                        <outlet property="webview" destination="Ee5-VT-N0x" id="0mn-Rb-y5b"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kQH-Ff-ysh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1610.144927536232" y="-1286.413043478261"/>
-        </scene>
-        <!--Living with Social Anxiety Disorder-->
-        <scene sceneID="M2A-yY-Uod">
-            <objects>
-                <viewController title="Living with Social Anxiety" id="Yrj-KV-dCw" userLabel="Living with Social Anxiety Disorder" customClass="LivingWithInfoViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ilH-Gb-2BC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dY4-jF-TAk">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6TU-U4-bsC"/>
-                    </view>
-                    <connections>
-                        <outlet property="webview" destination="dY4-jF-TAk" id="Hqm-8r-s3C"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hfb-5Y-k1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-920.28985507246387" y="-1286.413043478261"/>
-        </scene>
-        <!--Places to find help-->
-        <scene sceneID="SQR-dI-SsB">
-            <objects>
-                <viewController title="Places to find help" id="TkJ-Mp-TUK" userLabel="Places to find help" customClass="PlacesInfoViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gc6-bF-aHf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-dA-baG">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="tsL-JX-npo"/>
-                    </view>
-                    <connections>
-                        <outlet property="webview" destination="Um9-dA-baG" id="AiY-yR-fh3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dM5-Cm-Gav" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1610.144927536232" y="-611.41304347826087"/>
-        </scene>
-        <!--Improving your social skills-->
-        <scene sceneID="5pu-M5-0WB">
-            <objects>
-                <viewController title="Improving your social skills" id="h0G-l5-upO" customClass="ImprovingSkillsInfoViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Zsh-U2-Nru">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r93-Ct-WxW">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="EvG-I6-RuA"/>
-                    </view>
-                    <connections>
-                        <outlet property="webview" destination="r93-Ct-WxW" id="Ax3-7h-V6l"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fhj-X3-spo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-920.28985507246387" y="-611.41304347826087"/>
-        </scene>
-        <!--More...-->
-        <scene sceneID="ApY-yw-1kA">
-            <objects>
-                <viewController title="More..." id="ObJ-Ph-DxQ" customClass="MoreInfoViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8cN-Km-zpr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9c-xB-XdG">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="zsN-dw-oI2"/>
-                    </view>
-                    <connections>
-                        <outlet property="webview" destination="N9c-xB-XdG" id="cdx-9L-JAB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V36-in-4q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-920.28985507246387" y="103.53260869565219"/>
+            <point key="canvasLocation" x="2213" y="-976"/>
         </scene>
         <!--Information Webpages-->
         <scene sceneID="jHE-IF-xhi">
@@ -918,7 +773,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="70g-L5-3rL" kind="show" id="hPP-FX-IWY"/>
+                                            <segue destination="h8l-5c-eLg" kind="show" identifier="whatis" id="idn-sg-Y2u"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nca-55-do1">
@@ -933,7 +788,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Yrj-KV-dCw" kind="show" id="bCw-VG-l61"/>
+                                            <segue destination="h8l-5c-eLg" kind="show" identifier="livingwith" id="f5p-QX-hrz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRG-ih-J3h">
@@ -948,7 +803,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="TkJ-Mp-TUK" kind="show" id="3bW-rv-dIt"/>
+                                            <segue destination="h8l-5c-eLg" kind="show" identifier="help" id="QZZ-gJ-5of"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abw-X5-pGg">
@@ -963,7 +818,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="h0G-l5-upO" kind="show" id="k4B-er-bND"/>
+                                            <segue destination="h8l-5c-eLg" kind="show" identifier="socialskills" id="X4y-He-IKn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnp-yg-S1R">
@@ -978,7 +833,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ObJ-Ph-DxQ" kind="show" id="LTB-al-3Az"/>
+                                            <segue destination="h8l-5c-eLg" kind="show" identifier="more" id="zPA-EM-2YW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1010,7 +865,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdy-49-Nde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204.34782608695653" y="-611.41304347826087"/>
+            <point key="canvasLocation" x="993" y="72"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="uR0-FT-3wV">
+            <objects>
+                <viewController id="h8l-5c-eLg" customClass="WebViewVC" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LR-uO-QCL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-SJ-55e">
+                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fJN-SJ-55e" firstAttribute="leading" secondItem="k80-aR-pQT" secondAttribute="leading" id="9uP-1m-lkf"/>
+                            <constraint firstItem="k80-aR-pQT" firstAttribute="trailing" secondItem="fJN-SJ-55e" secondAttribute="trailing" id="RKP-D2-cUH"/>
+                            <constraint firstItem="fJN-SJ-55e" firstAttribute="top" secondItem="k80-aR-pQT" secondAttribute="top" id="adx-dx-Pku"/>
+                            <constraint firstItem="k80-aR-pQT" firstAttribute="bottom" secondItem="fJN-SJ-55e" secondAttribute="bottom" id="rdx-5Q-ONf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k80-aR-pQT"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="fJN-SJ-55e" id="hCs-Or-sGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSh-3q-3Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="72"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="z6K-Yg-yRt">
@@ -1024,19 +913,6 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="628"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuZ-31-L80">
-                                <rect key="frame" x="82" y="164" width="250" height="85"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Ftn-1Q-8bz"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="U9a-VO-FL5"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="sn0-Yl-G2G"/>
-                                    <constraint firstAttribute="height" constant="85" id="wWy-HM-AhT"/>
-                                </constraints>
-                                <state key="normal" image="Git"/>
-                                <connections>
-                                    <segue destination="Mmi-bS-7zl" kind="show" id="kdy-Ks-xWt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-0a-cBx">
                                 <rect key="frame" x="82" y="432" width="250" height="60"/>
                                 <constraints>
@@ -1045,14 +921,12 @@
                                 </constraints>
                                 <state key="normal" image="facebook"/>
                                 <connections>
-                                    <segue destination="zfn-qf-vdX" kind="show" id="5Nu-Ed-tT5"/>
+                                    <segue destination="h8l-5c-eLg" kind="show" identifier="fb" id="xWC-eY-Ulp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iuZ-31-L80" firstAttribute="top" secondItem="FyH-Bj-oy6" secondAttribute="top" constant="100" id="Fnf-ca-eOT"/>
-                            <constraint firstItem="iuZ-31-L80" firstAttribute="centerX" secondItem="FyH-Bj-oy6" secondAttribute="centerX" id="asX-L3-CGu"/>
                             <constraint firstItem="FyH-Bj-oy6" firstAttribute="bottom" secondItem="aIp-0a-cBx" secondAttribute="bottom" constant="200" id="daJ-H8-hF5"/>
                             <constraint firstItem="aIp-0a-cBx" firstAttribute="centerX" secondItem="FyH-Bj-oy6" secondAttribute="centerX" id="doz-Uc-lYZ"/>
                         </constraints>
@@ -1061,65 +935,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHT-zs-9QO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165.21739130434784" y="104.34782608695653"/>
-        </scene>
-        <!--Github View Controller-->
-        <scene sceneID="bZr-oF-1EZ">
-            <objects>
-                <viewController id="Mmi-bS-7zl" customClass="GithubViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ddp-jj-Cmg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oV5-Ym-6cT">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="EPR-ef-TGe"/>
-                    </view>
-                    <connections>
-                        <outlet property="webview" destination="oV5-Ym-6cT" id="gQG-PN-33Y"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nuS-RM-tF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-342.02898550724638" y="857.60869565217399"/>
-        </scene>
-        <!--Facebook View Controller-->
-        <scene sceneID="8hI-hN-OVB">
-            <objects>
-                <viewController id="zfn-qf-vdX" customClass="FacebookViewController" customModule="COSC345" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qyu-Ls-5P1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFR-TN-x9q">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ryt-4y-b7q"/>
-                    </view>
-                    <connections>
-                        <outlet property="webview" destination="gFR-TN-x9q" id="H9r-er-tJZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M86-7P-WKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="706" y="858"/>
+            <point key="canvasLocation" x="155" y="72"/>
         </scene>
         <!--Relaxing Image-->
         <scene sceneID="NOr-TC-nLu">
@@ -1166,7 +982,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Off-oa-elA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998.55072463768124" y="104.34782608695653"/>
+            <point key="canvasLocation" x="-451" y="-558"/>
         </scene>
         <!--Diary Entry-->
         <scene sceneID="oB4-kY-X7s">
@@ -1198,7 +1014,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffC-nc-hUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204.34782608695653" y="-1980.163043478261"/>
+            <point key="canvasLocation" x="-204" y="-1980"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sP2-oN-8cW">
@@ -1219,11 +1035,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9W-TO-DwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="-1703"/>
+            <point key="canvasLocation" x="590" y="-1356"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Git" width="500" height="205"/>
         <image name="background" width="750" height="1334"/>
         <image name="contact" width="512" height="512"/>
         <image name="diary" width="512" height="512"/>
@@ -1234,4 +1049,7 @@
         <image name="settings" width="512" height="512"/>
         <image name="toolkit" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xWC-eY-Ulp"/>
+    </inferredMetricsTieBreakers>
 </document>
