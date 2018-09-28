@@ -42,7 +42,7 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var input: UITextField!
 
-    @IBAction func additem(_ sender: Any) {
+    @IBAction func additem(_ sender: Any) { // Test if item added
         if(input.text != "")
         {
             list.append(input.text!)

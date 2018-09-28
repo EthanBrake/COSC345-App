@@ -17,7 +17,7 @@ class WebViewVC: UIViewController {
     
     @IBOutlet weak var webview: WKWebView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { // Could test all segue=>url's
         super.viewDidLoad()
 
         let myURL = URL(string: WebViewVC.myURL)!

@@ -19,7 +19,7 @@ class InformationViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // Could test from WebView clicking/setting segue then XCTAssert URL
         if segue.identifier == "socialskills" {
             WebViewVC.myURL = "https://www.improveyoursocialskills.com/basic-social-skills-guide"
         }else if segue.identifier == "livingwith" {

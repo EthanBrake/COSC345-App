@@ -19,13 +19,13 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var addGoalButton: UIButton!
     @IBOutlet weak var tblList: UITableView!
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) { // Could check if data received matches data?
         super.viewDidAppear(true)
         getData()
         
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) { // Could check if data stored?
         super.viewDidDisappear(true)
         storeData()
     }

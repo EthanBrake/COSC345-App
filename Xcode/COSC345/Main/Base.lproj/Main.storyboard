@@ -463,6 +463,14 @@
                                 <rect key="frame" x="20" y="218" width="374" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oM-7I-4Dy">
+                                <rect key="frame" x="375" y="64" width="39" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Information" image="info"/>
+                                <connections>
+                                    <action selector="infoAlert:" destination="VtF-6O-fXz" eventType="touchUpInside" id="4fK-4k-ubr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -479,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKh-O7-HIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1512" y="-596"/>
+            <point key="canvasLocation" x="1511.5942028985507" y="-596.73913043478262"/>
         </scene>
         <!--Goals Information-->
         <scene sceneID="QB8-Ai-UJN">

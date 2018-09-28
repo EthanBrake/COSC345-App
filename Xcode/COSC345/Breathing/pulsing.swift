@@ -48,7 +48,7 @@ class pulsing: CALayer {
         }
     }
     
-    func createScaleAnimation () -> CABasicAnimation {
+    func createScaleAnimation () -> CABasicAnimation { // Could test?
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale.xy")
         scaleAnimation.fromValue = NSNumber(value: initialPulseScale)
         scaleAnimation.toValue = NSNumber(value: 1)
@@ -57,7 +57,7 @@ class pulsing: CALayer {
         return scaleAnimation
     }
     
-    func createOpacityAnimation() -> CAKeyframeAnimation {
+    func createOpacityAnimation() -> CAKeyframeAnimation { // Could test?
         
         let opacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
         opacityAnimation.duration = animationDuration
