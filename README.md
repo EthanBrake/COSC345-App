@@ -1,3 +1,6 @@
+# To Do
+https://docs.google.com/document/d/1021HUR6lN5vKEB8HElIuCF-ebzXzX-JEXLfcmqnERO0/edit?usp=sharing
+
 # Social-Anxiety-App
 A self-help app for young adults with Social Anxiety Disorder
 
