@@ -13,19 +13,14 @@ let defaultss = UserDefaults(suiteName: "345App")
 var listItemArray: [String] = Array()
 var myIndex = 0
 
-protocol buttonPressDelegate {
-    func buttonPressed() -> Void
-}
 
-class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, buttonPressDelegate {
-    func buttonPressed() {
-        //addGoalButton = UIButton
-        print("yes")
-    }
+
+class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     
 
     @IBAction func testBtn(_ sender: Any) {
-        print("Inside testBtn")
+        
     }
     
     @IBOutlet weak var addGoalButton: UIButton!

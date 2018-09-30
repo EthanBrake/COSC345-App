@@ -17,6 +17,7 @@ class ViewGoalsViewController: UIViewController, buttonPressDelegate{
     var buttonPressDelegateObj: buttonPressDelegate?
     
     @IBOutlet weak var secondButton: UIButton!
+    
     @IBAction func secondBtnClicked(_ sender: Any) {
         if (buttonPressDelegateObj != nil) {
             buttonPressDelegateObj?.buttonPressed()
@@ -33,7 +34,7 @@ class ViewGoalsViewController: UIViewController, buttonPressDelegate{
         super.viewDidLoad()
         goalLabel.text = listItemArray[myIndex]
         
-        buttonPressDelegateObj = GoalsCellsViewController() as? buttonPressDelegate
+        buttonPressDelegateObj = TableViewCellGoal() as? buttonPressDelegate
     }
     
     override func viewDidAppear(_ animated: Bool) {
