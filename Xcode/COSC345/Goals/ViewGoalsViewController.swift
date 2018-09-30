@@ -8,24 +8,8 @@
 
 import UIKit
 
-class ViewGoalsViewController: UIViewController, buttonPressDelegate{
-    
-    func buttonPressed() {
-        secondButton.alpha = 0
-    }
-    
-    var buttonPressDelegateObj: buttonPressDelegate?
-    
-    @IBOutlet weak var secondButton: UIButton!
-    
-    @IBAction func secondBtnClicked(_ sender: Any) {
-        if (buttonPressDelegateObj != nil) {
-            buttonPressDelegateObj?.buttonPressed()
-        }
-        else {
-            print("You forgot to set your reference in buttonPressDelegateObj to contain an instance of secondViewController!")
-        }
-    }
+class ViewGoalsViewController: UIViewController{
+
     
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
@@ -33,8 +17,6 @@ class ViewGoalsViewController: UIViewController, buttonPressDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         goalLabel.text = listItemArray[myIndex]
-        
-        buttonPressDelegateObj = TableViewCellGoal() as? buttonPressDelegate
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -13,15 +13,7 @@ let defaultss = UserDefaults(suiteName: "345App")
 var listItemArray: [String] = Array()
 var myIndex = 0
 
-
-
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    
-
-    @IBAction func testBtn(_ sender: Any) {
-        
-    }
     
     @IBOutlet weak var addGoalButton: UIButton!
     @IBOutlet weak var tblList: UITableView!
