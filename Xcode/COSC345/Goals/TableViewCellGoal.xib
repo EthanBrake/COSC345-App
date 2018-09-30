@@ -28,6 +28,9 @@
                         </constraints>
                         <state key="normal" title="Button" image="UnChecked.png"/>
                         <state key="selected" image="Checked.png"/>
+                        <connections>
+                            <action selector="testBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VdC-Zt-OXH"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bV-hW-zh3">
                         <rect key="frame" x="31" y="11" width="4.5" height="50"/>
