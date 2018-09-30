@@ -6,10 +6,7 @@
 //  Copyright © 2018 Ethan Brake. All rights reserved.
 //
 
-//FIRST
 import UIKit
-
-
 
 class ViewGoalsViewController: UIViewController, buttonPressDelegate{
     
@@ -18,10 +15,8 @@ class ViewGoalsViewController: UIViewController, buttonPressDelegate{
     }
     
     var buttonPressDelegateObj: buttonPressDelegate?
-
     
     @IBOutlet weak var secondButton: UIButton!
-    
     @IBAction func secondBtnClicked(_ sender: Any) {
         if (buttonPressDelegateObj != nil) {
             buttonPressDelegateObj?.buttonPressed()
@@ -39,10 +34,6 @@ class ViewGoalsViewController: UIViewController, buttonPressDelegate{
         goalLabel.text = listItemArray[myIndex]
         
         buttonPressDelegateObj = GoalsCellsViewController() as? buttonPressDelegate
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     override func viewDidAppear(_ animated: Bool) {

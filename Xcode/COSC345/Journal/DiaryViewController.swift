@@ -12,7 +12,6 @@ var list: [String] = []
 
 class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     let listUserDefault = UserDefaults.standard
     
     @IBOutlet weak var myTableView: UITableView!
@@ -42,7 +41,7 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var input: UITextField!
 
-    @IBAction func additem(_ sender: Any) { // Test if item added
+    @IBAction func additem(_ sender: Any) {
         if(input.text != "")
         {
             list.append(input.text!)
@@ -60,10 +59,6 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
         myTableView.rowHeight = UITableViewAutomaticDimension
 
         self.title = "Diary"
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){

@@ -20,11 +20,5 @@ class JournalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         journalLabel.text = list[myrowIndex]
-       // DisplayField.text = journallist[myJournalIndex]
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

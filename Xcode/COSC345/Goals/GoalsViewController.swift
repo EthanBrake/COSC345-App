@@ -10,15 +10,9 @@ import UIKit
 
 class GoalsViewController: UIViewController {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "My Goals"
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     @IBAction func whatIsAGoalVC(_ sender: Any) {
@@ -30,6 +24,4 @@ class GoalsViewController: UIViewController {
     @IBAction func toTableViewGoal(_ sender: Any) {
         self.performSegue(withIdentifier: "toTableViewGoalSegue", sender: self)
     }
-    
 }
-

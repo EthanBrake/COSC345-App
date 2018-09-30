@@ -24,14 +24,4 @@ class WebViewVC: UIViewController {
         let request = URLRequest(url: myURL)
         webview.load(request)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-    }
 }

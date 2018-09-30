@@ -13,9 +13,4 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Home"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }

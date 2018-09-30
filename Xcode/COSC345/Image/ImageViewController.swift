@@ -28,8 +28,6 @@ class ImageViewController: UIViewController, UINavigationControllerDelegate, UII
         if let userimage = info[UIImagePickerControllerOriginalImage] as? UIImage{
             backgroundView.image = userimage
              self.inputButton.isHidden = true
-        }else{
-            // Error Message
         }
         self.dismiss(animated: true, completion: nil)
     }
@@ -45,10 +43,5 @@ class ImageViewController: UIViewController, UINavigationControllerDelegate, UII
         if let image = imageThatIgetFromSomewhere {
             backgroundView.image = image
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

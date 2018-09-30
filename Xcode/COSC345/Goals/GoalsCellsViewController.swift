@@ -19,7 +19,7 @@ protocol buttonPressDelegate {
 
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, buttonPressDelegate {
     func buttonPressed() {
-        addGoalButton = UIButton
+        //addGoalButton = UIButton
         print("yes")
     }
     
@@ -54,11 +54,6 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         tblList.rowHeight = UITableViewAutomaticDimension
     }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     //Tells the data source to return the number of rows in a given section of a table view.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listItemArray.count
@@ -79,7 +74,6 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         return UITableViewAutomaticDimension
     }
   
-
     //When my checkmark button is selected or deselected
  @objc func checkMarkedButtonClicked( sender: UIButton){
         if sender.isSelected{
@@ -90,7 +84,6 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
             sender.isSelected = true
         }
     }
-    
     
     //Tells the delegate that the specified row is now selected. myIndex is the current row, once clicked performs a segue to view the selected Goal
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
@@ -153,8 +146,6 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         let data = defaultss?.value(forKey: "savedData")
         if data != nil {
             listItemArray = data as! [String]
-        } else{
-            //Else what?
         }
     }
 }
