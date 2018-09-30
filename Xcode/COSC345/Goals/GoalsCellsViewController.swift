@@ -13,13 +13,23 @@ let defaultss = UserDefaults(suiteName: "345App")
 var listItemArray: [String] = Array()
 var myIndex = 0
 
-class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+protocol buttonPressDelegate {
+    func buttonPressed() -> Void
+}
+
+class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, buttonPressDelegate {
+    func buttonPressed() {
+        addGoalButton = UIButton
+        print("yes")
+    }
     
-  
+
+    @IBAction func testBtn(_ sender: Any) {
+        print("Inside testBtn")
+    }
     
     @IBOutlet weak var addGoalButton: UIButton!
     @IBOutlet weak var tblList: UITableView!
-
 
     
     override func viewDidAppear(_ animated: Bool) { // Could check if data received matches data?
@@ -69,8 +79,9 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         return UITableViewAutomaticDimension
     }
   
+
     //When my checkmark button is selected or deselected
-    @objc func checkMarkedButtonClicked( sender: UIButton){
+ @objc func checkMarkedButtonClicked( sender: UIButton){
         if sender.isSelected{
             //uncheck button
             sender.isSelected = false
@@ -79,6 +90,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
             sender.isSelected = true
         }
     }
+    
     
     //Tells the delegate that the specified row is now selected. myIndex is the current row, once clicked performs a segue to view the selected Goal
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){

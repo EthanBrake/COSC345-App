@@ -6,16 +6,39 @@
 //  Copyright © 2018 Ethan Brake. All rights reserved.
 //
 
+//FIRST
 import UIKit
 
-class ViewGoalsViewController: UIViewController {
 
+
+class ViewGoalsViewController: UIViewController, buttonPressDelegate{
+    
+    func buttonPressed() {
+        secondButton.alpha = 0
+    }
+    
+    var buttonPressDelegateObj: buttonPressDelegate?
+
+    
+    @IBOutlet weak var secondButton: UIButton!
+    
+    @IBAction func secondBtnClicked(_ sender: Any) {
+        if (buttonPressDelegateObj != nil) {
+            buttonPressDelegateObj?.buttonPressed()
+        }
+        else {
+            print("You forgot to set your reference in buttonPressDelegateObj to contain an instance of secondViewController!")
+        }
+    }
+    
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         goalLabel.text = listItemArray[myIndex]
+        
+        buttonPressDelegateObj = GoalsCellsViewController() as? buttonPressDelegate
     }
 
     override func didReceiveMemoryWarning() {
