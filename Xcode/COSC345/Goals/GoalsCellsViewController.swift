@@ -18,13 +18,16 @@ protocol buttonPressDelegate {
 }
 
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, buttonPressDelegate {
+  
+
     func buttonPressed() {
-        addGoalButton = UIButton
+        testBtn((Any).self)
         print("yes")
     }
     
 
     @IBAction func testBtn(_ sender: Any) {
+        
         print("Inside testBtn")
     }
     
@@ -90,8 +93,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
             sender.isSelected = true
         }
     }
-    
-    
+   
     //Tells the delegate that the specified row is now selected. myIndex is the current row, once clicked performs a segue to view the selected Goal
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         myIndex = indexPath.row

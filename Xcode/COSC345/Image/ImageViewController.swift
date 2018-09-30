@@ -10,8 +10,6 @@ import UIKit
 
 class ImageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var myImageView: UIImageView!
-    
     @IBAction func importimage(_ sender: Any)
     {
         let userimage = UIImagePickerController()
@@ -45,6 +43,7 @@ class ImageViewController: UIViewController, UINavigationControllerDelegate, UII
         if let image = imageThatIgetFromSomewhere {
             backgroundView.image = image
         }
+        self.restorationIdentifier = "Hello"
     }
 
     override func didReceiveMemoryWarning() {

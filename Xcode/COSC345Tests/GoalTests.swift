@@ -14,6 +14,17 @@ import XCTest
 
 class GoalTest : XCTestCase{
     
+    func testClickingACell() {
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! GoalsCellsViewController
+        let cell = controller.tblList.dataSource?.tableView(controller.tblList, cellForRowAt: IndexPath(row: 0, section: 0))
+        
+        controller.performSegue(withIdentifier: "toViewGoalSegue", sender: cell)
+        
+        XCTAssertNotNil(controller.presentedViewController as? ViewGoalsViewController)
+    }
+    
+    
+    
     //Test to check if the button to add a goal works
 //    func testAddNewGoal() {
 //        let vc = GoalsCellsViewController()
@@ -44,6 +55,8 @@ class GoalTest : XCTestCase{
 //
 //        // confirm that prepareForSegue() properly sets the 'placeId' property of the destination view controller
 //        XCTAssertEqual(tappedModelId, targetViewController)
+        
+        
         
         
         
