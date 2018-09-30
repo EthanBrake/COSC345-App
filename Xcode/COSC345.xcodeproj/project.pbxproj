@@ -15,6 +15,8 @@
 		C80DEFAF2117BAEA00E2604F /* TableViewCellGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */; };
 		C80DEFB02117BAEA00E2604F /* TableViewCellGoal.xib in Resources */ = {isa = PBXBuildFile; fileRef = C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */; };
 		C80DEFB22117BBA900E2604F /* GoalsCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */; };
+		C8186F79216036F300D88BF0 /* PuslingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8186F78216036F300D88BF0 /* PuslingTests.swift */; };
+		C8186F7B21604B3600D88BF0 /* GoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8186F7A21604B3600D88BF0 /* GoalTests.swift */; };
 		C827DF1921531F660061DA0C /* COSC345Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827DF1821531F660061DA0C /* COSC345Tests.swift */; };
 		C830BF892092C33B00FFEAA9 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830BF882092C33B00FFEAA9 /* ImageViewController.swift */; };
 		C836EA8B2119008800A00EBF /* ViewGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C836EA8A2119008800A00EBF /* ViewGoalsViewController.swift */; };
@@ -48,6 +50,8 @@
 		C80DEFAD2117BAEA00E2604F /* TableViewCellGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGoal.swift; sourceTree = "<group>"; };
 		C80DEFAE2117BAEA00E2604F /* TableViewCellGoal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellGoal.xib; sourceTree = "<group>"; };
 		C80DEFB12117BBA900E2604F /* GoalsCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsCellsViewController.swift; sourceTree = "<group>"; };
+		C8186F78216036F300D88BF0 /* PuslingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuslingTests.swift; sourceTree = "<group>"; };
+		C8186F7A21604B3600D88BF0 /* GoalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTests.swift; sourceTree = "<group>"; };
 		C827DF1621531F660061DA0C /* COSC345Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COSC345Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C827DF1821531F660061DA0C /* COSC345Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSC345Tests.swift; sourceTree = "<group>"; };
 		C827DF1A21531F660061DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			children = (
 				C827DF1821531F660061DA0C /* COSC345Tests.swift */,
 				C827DF1A21531F660061DA0C /* Info.plist */,
+				C8186F78216036F300D88BF0 /* PuslingTests.swift */,
+				C8186F7A21604B3600D88BF0 /* GoalTests.swift */,
 			);
 			path = COSC345Tests;
 			sourceTree = "<group>";
@@ -288,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8186F79216036F300D88BF0 /* PuslingTests.swift in Sources */,
+				C8186F7B21604B3600D88BF0 /* GoalTests.swift in Sources */,
 				C827DF1921531F660061DA0C /* COSC345Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,9 +15,12 @@ var myIndex = 0
 
 class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+  
     
     @IBOutlet weak var addGoalButton: UIButton!
     @IBOutlet weak var tblList: UITableView!
+
+
     
     override func viewDidAppear(_ animated: Bool) { // Could check if data received matches data?
         super.viewDidAppear(true)
@@ -40,6 +43,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         tblList.delegate = self
         tblList.rowHeight = UITableViewAutomaticDimension
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -103,7 +107,9 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
         let alert = UIAlertController(title: "My Goal:", message: "Create your goal:", preferredStyle: .alert)
         
         //Adds a text field to the alert
-        alert.addTextField{(textField) in textField.placeholder = "Enter goal here"}
+        alert.addTextField {
+            (textField) in textField.placeholder = "Enter goal here"
+        }
         
         //Adds a confirm button
         alert.addAction(UIAlertAction(title: "Confirm Goal", style: .default, handler: {[weak alert](_) in

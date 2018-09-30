@@ -30,7 +30,7 @@ import UIKit
         addPulse()
     }
     
-    func addPulse(){ // Creates an animatiion instance. Could test?
+    func addPulse(){ // Creates an animation instance. Could test?
         let pulse = pulsing(radius: 160, position: avatarImageView.center)
         pulse.animationDuration = 3.5
         pulse.backgroundColor = UIColor.blue.cgColor
