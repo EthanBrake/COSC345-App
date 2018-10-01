@@ -5,7 +5,6 @@
 //  Created by Ethan Brake on 8/6/18.
 //  Copyright © 2018 Ethan Brake. All rights reserved.
 //
-
 import UIKit
 
 let defaultss = UserDefaults(suiteName: "345App")
@@ -17,12 +16,10 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var addGoalButton: UIButton!
     @IBOutlet weak var tblList: UITableView!
-
     
     override func viewDidAppear(_ animated: Bool) { // Could check if data received matches data?
         super.viewDidAppear(true)
         getData()
-        
     }
     
     override func viewDidDisappear(_ animated: Bool) { // Could check if data stored?
@@ -62,7 +59,7 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     }
   
     //When my checkmark button is selected or deselected
- @objc func checkMarkedButtonClicked( sender: UIButton){
+    @objc func checkMarkedButtonClicked( sender: UIButton){
         if sender.isSelected{
             //uncheck button
             sender.isSelected = false
@@ -82,8 +79,6 @@ class GoalsCellsViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == UITableViewCellEditingStyle.delete{
             listItemArray.remove(at: indexPath.row)
-           // listItemArray.deleteRows(at: [indexPath], with: .fade)
-            
             tblList.reloadData()
         }
     }

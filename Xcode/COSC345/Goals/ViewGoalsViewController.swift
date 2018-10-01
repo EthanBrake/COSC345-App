@@ -5,11 +5,9 @@
 //  Created by Ethan Brake on 8/7/18.
 //  Copyright © 2018 Ethan Brake. All rights reserved.
 //
-
 import UIKit
 
 class ViewGoalsViewController: UIViewController{
-
     
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
